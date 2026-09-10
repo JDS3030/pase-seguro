@@ -4,13 +4,13 @@ import { fileURLToPath } from "node:url";
 export default defineConfig({
   resolve: {
     alias: {
-      "@": fileURLToPath(new URL("./backend/src", import.meta.url)),
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
   test: {
     environment: "node",
     fileParallelism: false, // test files share a real DB — serialize to avoid deleteMany() race conditions
-    include: ["backend/src/**/*.test.ts"],
+    include: ["src/**/*.test.ts"],
     env: {
       DATABASE_URL:
         process.env.DATABASE_URL ?? "postgresql://paseo:paseo@localhost:5432/paseo_seguro",

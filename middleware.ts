@@ -1,1 +1,1 @@
-export { middleware, config } from "./backend/src/middleware";
+export { middleware, config } from "./src/middleware";
