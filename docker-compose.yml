@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: paseo-seguro-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: paseo
+      POSTGRES_PASSWORD: paseo
+      POSTGRES_DB: paseo_seguro
+    ports:
+      - "5432:5432"
+    volumes:
+      - paseo-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U paseo -d paseo_seguro"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  paseo-data:

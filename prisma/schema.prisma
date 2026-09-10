@@ -1,0 +1,97 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum BookingStatus {
+  PENDING
+  CONFIRMED
+  PAYMENT_FAILED
+  EXPIRED
+  CANCELLED
+}
+
+enum TimeSlot {
+  MORNING
+  AFTERNOON
+  EVENING
+}
+
+model Tour {
+  id             String   @id @default(cuid())
+  slug           String   @unique
+  title          String
+  description    String
+  locationName   String
+  countryCode    String   @db.Char(2)
+  latitude       Float
+  longitude      Float
+  timezone       String
+  basePriceCents Int
+  currency       String   @db.Char(3)
+  durationMin    Int
+  maxCapacity    Int      @default(15)
+  slots          TimeSlot[]
+  active         Boolean  @default(true)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  bookings Booking[]
+
+  @@index([active, countryCode])
+}
+
+model Booking {
+  id     String @id @default(cuid())
+  tourId String
+  tour   Tour   @relation(fields: [tourId], references: [id])
+
+  customerName    String
+  customerEmail   String
+  bookingDate     DateTime @db.Date
+  timeSlot        TimeSlot
+  passengersCount Int      @default(1)
+
+  basePriceCents     Int
+  discountBps        Int    @default(0)
+  discountCents      Int    @default(0)
+  finalPriceCents    Int
+  currency           String @db.Char(3)
+  pricingRuleVersion String
+  weatherSnapshot    Json
+
+  status                BookingStatus @default(PENDING)
+  stripeSessionId       String?       @unique
+  stripePaymentIntentId String?       @unique
+  amountPaidCents       Int?
+  confirmedAt           DateTime?
+  createdAt             DateTime      @default(now())
+  updatedAt             DateTime      @updatedAt
+
+  @@index([status, createdAt])
+  @@index([customerEmail, createdAt])
+  @@index([tourId, bookingDate])
+  @@index([tourId, bookingDate, timeSlot, status])
+}
+
+model ProcessedWebhookEvent {
+  id          String   @id
+  type        String
+  bookingId   String?
+  processedAt DateTime @default(now())
+
+  @@index([bookingId])
+}
+
+model WeatherCache {
+  key       String   @id
+  payload   Json
+  fetchedAt DateTime @default(now())
+  expiresAt DateTime
+
+  @@index([expiresAt])
+}

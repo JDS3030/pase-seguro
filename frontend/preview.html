@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paseo Seguro — Preview CSS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Variables ─────────────────────────────────────────── */
+    :root {
+      /* Caribeño */
+      --accent:       #0ea5e9;
+      --accent-dark:  #0284c7;
+      --accent-soft:  #e0f2fe;
+      --accent-mid:   #bae6fd;
+
+      /* Esmeralda — descuentos y ahorro */
+      --ok:           #10b981;
+      --ok-dark:      #059669;
+      --ok-soft:      #d1fae5;
+
+      /* Ámbar — alertas de clima */
+      --warn:         #f59e0b;
+      --warn-dark:    #d97706;
+      --warn-soft:    #fef3c7;
+      --warn-ink:     #92400e;
+
+      /* Lluvia — barra y badges */
+      --rain:         #38bdf8;
+      --rain-dark:    #0ea5e9;
+      --rain-bg:      #f0f9ff;
+      --rain-ink:     #0c4a6e;
+
+      /* Peligro */
+      --danger:       #ef4444;
+      --danger-soft:  #fee2e2;
+      --danger-ink:   #991b1b;
+
+      /* Fondos y superficies */
+      --bg:           #f8fafc;
+      --surface:      #ffffff;
+      --surface-2:    #f8fafc;
+      --line:         #e2e8f0;
+      --line-focus:   #bae6fd;
+
+      /* Texto */
+      --ink:          #0f172a;
+      --ink-2:        #334155;
+      --ink-3:        #64748b;
+      --ink-4:        #94a3b8;
+
+      /* Forma */
+      --radius-sm:    8px;
+      --radius:       12px;
+      --radius-lg:    16px;
+      --radius-xl:    20px;
+
+      /* Sombras */
+      --shadow-xs:    0 1px 2px rgba(15,23,42,.06);
+      --shadow-sm:    0 1px 3px rgba(15,23,42,.08), 0 1px 2px rgba(15,23,42,.06);
+      --shadow-md:    0 4px 12px rgba(15,23,42,.10), 0 2px 4px rgba(15,23,42,.06);
+      --shadow-hover: 0 8px 24px rgba(14,165,233,.15), 0 2px 6px rgba(15,23,42,.08);
+
+      --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      --mono: ui-monospace, 'SFMono-Regular', Consolas, monospace;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-dark); text-decoration: underline; }
+
+    /* ── Layout ─────────────────────────────────────────────── */
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--line);
+      padding: 0 24px;
+    }
+    .header-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      height: 64px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--ink);
+      text-decoration: none;
+      letter-spacing: -.01em;
+    }
+    .brand-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .brand-icon svg { display: block; }
+    .tagline {
+      margin: 0;
+      color: var(--ink-3);
+      font-size: .88rem;
+      font-weight: 400;
+    }
+
+    .site-main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 32px 24px 72px;
+    }
+    .site-footer {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 20px 24px;
+      border-top: 1px solid var(--line);
+      color: var(--ink-4);
+      font-size: .82rem;
+    }
+
+    /* ── Tipografía ─────────────────────────────────────────── */
+    h1 { font-size: 1.9rem; font-weight: 800; letter-spacing: -.03em; margin: 0 0 8px; line-height: 1.2; }
+    h2 { font-size: 1.05rem; font-weight: 700; margin: 0 0 16px; letter-spacing: -.01em; }
+    h3 { font-size: 1rem; font-weight: 700; margin: 0; letter-spacing: -.01em; }
+    .muted { color: var(--ink-3); }
+    .danger { color: var(--danger); }
+
+    /* ── Sección preview ────────────────────────────────────── */
+    .preview-section {
+      margin-bottom: 48px;
+    }
+    .preview-label {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--ink-4);
+      font-family: var(--mono);
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    /* ── Catálogo / tour grid ───────────────────────────────── */
+    .tour-grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .tour-card {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      text-decoration: none;
+      color: inherit;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow .18s ease, transform .18s ease, border-color .18s ease;
+      overflow: hidden;
+    }
+    .tour-card:hover {
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-3px);
+      border-color: var(--accent-mid);
+    }
+
+    .tour-card-img {
+      height: 160px;
+      background: linear-gradient(135deg, #0ea5e9 0%, #0369a1 60%, #0c4a6e 100%);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      padding: 14px 16px;
+    }
+    .tour-card-img-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(12,74,110,.55) 0%, transparent 60%);
+    }
+    .tour-card-img-emoji {
+      font-size: 2.8rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+      filter: drop-shadow(0 2px 8px rgba(0,0,0,.25));
+    }
+    .tour-card-img-slot {
+      position: relative;
+      z-index: 1;
+      background: rgba(255,255,255,.18);
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 20px;
+      padding: 3px 10px;
+      font-size: .75rem;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: .02em;
+    }
+
+    .tour-card-body {
+      padding: 16px 18px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      flex: 1;
+    }
+    .tour-card-body h3 { font-size: 1rem; }
+    .loc {
+      color: var(--ink-3);
+      font-size: .84rem;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin: 0;
+    }
+    .desc {
+      color: var(--ink-2);
+      font-size: .88rem;
+      margin: 6px 0 0;
+      flex: 1;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .tour-card .foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--line);
+      padding: 12px 18px;
+      margin-top: 14px;
+    }
+    .price {
+      font-size: 1.15rem;
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      color: var(--ink);
+    }
+    .price-label {
+      font-size: .75rem;
+      color: var(--ink-3);
+      font-weight: 400;
+    }
+    .capacity-pill {
+      font-size: .74rem;
+      font-weight: 600;
+      color: var(--ok-dark);
+      background: var(--ok-soft);
+      border-radius: 20px;
+      padding: 3px 9px;
+    }
+
+    /* ── Detalle ────────────────────────────────────────────── */
+    .detail {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(320px, 1fr);
+      gap: 36px;
+      align-items: start;
+    }
+    .detail .body p { color: var(--ink-2); max-width: 62ch; }
+
+    .facts {
+      display: grid;
+      gap: 0 28px;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      margin-top: 28px;
+    }
+    .facts div {
+      border-top: 2px solid var(--line);
+      padding: 14px 0;
+    }
+    .facts div:first-child { border-top-color: var(--accent); }
+    .facts dt {
+      font-size: .68rem;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: var(--ink-4);
+      font-family: var(--mono);
+      font-weight: 600;
+    }
+    .facts dd { margin: 4px 0 0; font-size: .95rem; font-weight: 500; }
+
+    /* ── Panel ──────────────────────────────────────────────── */
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      position: sticky;
+      top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      box-shadow: var(--shadow-md);
+    }
+    .panel-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+
+    .field { display: flex; flex-direction: column; gap: 6px; }
+    .field label {
+      font-size: .75rem;
+      font-weight: 600;
+      color: var(--ink-2);
+      letter-spacing: .02em;
+      text-transform: uppercase;
+    }
+    .field input, .field select {
+      font: inherit;
+      font-size: .95rem;
+      padding: 10px 12px;
+      border: 1.5px solid var(--line);
+      border-radius: var(--radius-sm);
+      background: var(--surface-2);
+      color: var(--ink);
+      transition: border-color .15s ease, box-shadow .15s ease;
+      outline: none;
+    }
+    .field input:focus, .field select:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-soft);
+    }
+
+    .row { display: grid; grid-template-columns: 1fr 1fr 80px; gap: 12px; }
+
+    /* ── Weather badge ──────────────────────────────────────── */
+    .weather {
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      background: var(--rain-bg);
+      border: 1px solid var(--accent-mid);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .weather.discount {
+      background: var(--ok-soft);
+      border-color: #6ee7b7;
+    }
+    .weather.unknown {
+      background: var(--warn-soft);
+      border-color: #fcd34d;
+    }
+    .weather-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .weather .headline {
+      font-weight: 700;
+      font-size: .95rem;
+      color: var(--rain-ink);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .weather.discount .headline { color: var(--ok-dark); }
+    .weather.unknown .headline { color: var(--warn-ink); }
+    .weather .detail-line { font-size: .83rem; color: var(--ink-2); }
+    .weather .rain-pct {
+      font-size: 1.6rem;
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: -.03em;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .weather.discount .rain-pct { color: var(--ok); }
+
+    .rainbar {
+      height: 7px;
+      border-radius: 4px;
+      background: var(--accent-mid);
+      overflow: hidden;
+    }
+    .rainbar span {
+      display: block;
+      height: 100%;
+      background: linear-gradient(90deg, var(--rain) 0%, var(--accent-dark) 100%);
+      border-radius: 4px;
+    }
+    .weather.discount .rainbar { background: #a7f3d0; }
+    .weather.discount .rainbar span {
+      background: linear-gradient(90deg, var(--ok) 0%, var(--ok-dark) 100%);
+    }
+
+    /* ── Precio ─────────────────────────────────────────────── */
+    .total {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+    }
+    .total .strike {
+      color: var(--ink-4);
+      text-decoration: line-through;
+      font-size: .9rem;
+    }
+    .total .final {
+      font-size: 1.75rem;
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: -.02em;
+      color: var(--ink);
+    }
+    .total .save {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--ok-dark);
+      font-size: .85rem;
+      font-weight: 700;
+      background: var(--ok-soft);
+      border-radius: 20px;
+      padding: 3px 10px;
+      width: fit-content;
+      margin-top: 2px;
+    }
+
+    /* ── CTA ────────────────────────────────────────────────── */
+    button.cta {
+      font: inherit;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 13px 16px;
+      border: none;
+      border-radius: var(--radius-sm);
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+      color: #fff;
+      cursor: pointer;
+      letter-spacing: -.01em;
+      box-shadow: 0 2px 8px rgba(14,165,233,.3);
+      transition: box-shadow .15s ease, transform .12s ease, background .15s ease;
+    }
+    button.cta:hover:not(:disabled) {
+      background: linear-gradient(135deg, var(--accent-dark) 0%, #075985 100%);
+      box-shadow: 0 4px 16px rgba(14,165,233,.4);
+      transform: translateY(-1px);
+    }
+    button.cta:disabled { opacity: .45; cursor: not-allowed; box-shadow: none; }
+
+    /* ── Alertas ────────────────────────────────────────────── */
+    .alert {
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      font-size: .875rem;
+      font-weight: 500;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .alert::before { flex-shrink: 0; font-size: 1rem; line-height: 1.4; }
+    .alert.error  { background: var(--danger-soft); color: var(--danger-ink); }
+    .alert.error::before  { content: "✕"; }
+    .alert.info   { background: var(--accent-soft); color: var(--rain-ink); }
+    .alert.info::before   { content: "ℹ"; }
+    .alert.warn   { background: var(--warn-soft); color: var(--warn-ink); }
+    .alert.warn::before   { content: "⚠"; }
+
+    /* ── Badges ─────────────────────────────────────────────── */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-family: var(--mono);
+      font-size: .7rem;
+      letter-spacing: .06em;
+      font-weight: 700;
+      padding: .25em .65em;
+      border-radius: 6px;
+      text-transform: uppercase;
+    }
+    .badge.ok     { background: var(--ok-soft);    color: var(--ok-dark); }
+    .badge.warn   { background: var(--warn-soft);  color: var(--warn-ink); }
+    .badge.danger { background: var(--danger-soft); color: var(--danger-ink); }
+    .badge.info   { background: var(--accent-soft); color: var(--rain-ink); }
+
+    /* ── Confirmación ───────────────────────────────────────── */
+    .confirm {
+      max-width: 560px;
+      margin: 40px auto;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      padding: 36px;
+      box-shadow: var(--shadow-md);
+    }
+    .confirm h1 { margin-top: 12px; }
+    .confirm .summary {
+      border-top: 1px solid var(--line);
+      margin-top: 24px;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .confirm .summary div {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      font-size: .92rem;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .confirm .summary div:last-child { border-bottom: none; }
+    .confirm .summary dt { color: var(--ink-3); font-weight: 500; }
+    .confirm .summary dd { font-weight: 600; text-align: right; }
+
+    /* ── Spinner ────────────────────────────────────────────── */
+    .spinner {
+      width: 18px;
+      height: 18px;
+      border: 2.5px solid var(--line);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin .7s linear infinite;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) { .spinner { animation: none; } }
+
+    /* ── Cupos ──────────────────────────────────────────────── */
+    .spots-ok {
+      font-size: .82rem;
+      color: var(--ok-dark);
+      background: var(--ok-soft);
+      border-radius: 6px;
+      padding: 5px 10px;
+      font-weight: 600;
+    }
+    .spots-low {
+      font-size: .82rem;
+      color: var(--warn-ink);
+      background: var(--warn-soft);
+      border-radius: 6px;
+      padding: 5px 10px;
+      font-weight: 600;
+    }
+    .spots-out {
+      font-size: .82rem;
+      color: var(--danger-ink);
+      background: var(--danger-soft);
+      border-radius: 6px;
+      padding: 5px 10px;
+      font-weight: 600;
+    }
+
+    /* ── Divider visual ─────────────────────────────────────── */
+    hr { border: none; border-top: 1px solid var(--line); margin: 40px 0; }
+
+    /* ── Responsive ─────────────────────────────────────────── */
+    @media (max-width: 860px) { .detail { grid-template-columns: 1fr; } }
+    @media (max-width: 500px) { .row { grid-template-columns: 1fr 1fr; } }
+
+    /* ── Stripe Checkout mockup ─────────────────────────────── */
+    .stripe-page {
+      min-height: 100vh;
+      background: #f6f9fc;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow-md);
+    }
+    /* Panel izquierdo — resumen del pedido */
+    .stripe-summary {
+      background: #1a1f36;
+      color: #fff;
+      padding: 40px 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .stripe-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 36px;
+    }
+    .stripe-logo-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background: linear-gradient(135deg,#0ea5e9,#0284c7);
+      display:flex;align-items:center;justify-content:center;
+    }
+    .stripe-logo-name { font-size: .9rem; font-weight: 700; color: #fff; letter-spacing:.02em; }
+
+    .stripe-label { font-size: .72rem; color: #8792a2; text-transform: uppercase; letter-spacing: .1em; font-weight: 600; margin-bottom: 4px; }
+    .stripe-amount { font-size: 2.4rem; font-weight: 800; letter-spacing: -.03em; color: #fff; line-height: 1; margin-bottom: 6px; font-variant-numeric: tabular-nums; }
+    .stripe-amount-note { font-size: .82rem; color: #8792a2; margin-bottom: 32px; }
+
+    .stripe-items { display: flex; flex-direction: column; gap: 14px; border-top: 1px solid rgba(255,255,255,.1); padding-top: 24px; }
+    .stripe-item { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+    .stripe-item-info { display:flex; flex-direction:column; gap:2px; }
+    .stripe-item-name { font-size: .9rem; color: #e3e8f0; font-weight: 500; }
+    .stripe-item-desc { font-size: .78rem; color: #697386; }
+    .stripe-item-price { font-size: .9rem; color: #e3e8f0; font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+    .stripe-divider { border: none; border-top: 1px solid rgba(255,255,255,.1); margin: 20px 0; }
+
+    .stripe-total-row { display: flex; justify-content: space-between; align-items: baseline; }
+    .stripe-total-label { font-size: .85rem; color: #8792a2; font-weight: 500; }
+    .stripe-total-value { font-size: 1rem; font-weight: 700; color: #fff; font-variant-numeric: tabular-nums; }
+    .stripe-discount-badge {
+      display: inline-flex; align-items: center; gap: 4px;
+      background: rgba(16,185,129,.2); color: #6ee7b7;
+      border-radius: 4px; padding: 2px 7px;
+      font-size: .73rem; font-weight: 700;
+    }
+
+    .stripe-secure { display: flex; align-items: center; gap: 6px; margin-top: auto; padding-top: 32px; color: #697386; font-size: .77rem; }
+
+    /* Panel derecho — formulario de pago */
+    .stripe-form-panel {
+      background: #fff;
+      padding: 40px 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+    .stripe-form-title { font-size: 1.1rem; font-weight: 700; color: #1a1f36; margin: 0; }
+    .stripe-form-subtitle { font-size: .83rem; color: #697386; margin: 2px 0 0; }
+
+    .stripe-field { display: flex; flex-direction: column; gap: 5px; }
+    .stripe-field label { font-size: .75rem; font-weight: 600; color: #3c4257; letter-spacing: .01em; }
+    .stripe-field input, .stripe-field select {
+      font-size: .92rem;
+      padding: 10px 12px;
+      border: 1.5px solid #e3e8ef;
+      border-radius: 6px;
+      color: #1a1f36;
+      background: #fff;
+      outline: none;
+      font-family: inherit;
+      transition: border-color .15s;
+    }
+    .stripe-field input:focus, .stripe-field select:focus { border-color: #5469d4; box-shadow: 0 0 0 3px rgba(84,105,212,.15); }
+    .stripe-field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .stripe-field-card {
+      font-size: .92rem;
+      padding: 10px 12px;
+      border: 1.5px solid #5469d4;
+      border-radius: 6px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 0 0 3px rgba(84,105,212,.15);
+    }
+    .stripe-card-number { color: #1a1f36; font-family: var(--mono); letter-spacing: .08em; }
+    .stripe-card-icons { display: flex; gap: 6px; }
+    .stripe-card-icon {
+      width: 30px; height: 20px;
+      border-radius: 3px;
+      border: 1px solid #e3e8ef;
+      background: #f6f9fc;
+      display: flex; align-items: center; justify-content: center;
+      font-size: .55rem; font-weight: 700; color: #697386; letter-spacing: .02em;
+    }
+    .stripe-card-icon.visa { background: #1a1f8f; color: #fff; }
+    .stripe-card-icon.mc { background: #eb001b; color: #fff; }
+
+    .stripe-pay-btn {
+      background: #5469d4;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 14px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      letter-spacing: -.01em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: background .15s;
+    }
+    .stripe-pay-btn:hover { background: #3d4eac; }
+
+    .stripe-powered {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      color: #8792a2;
+      font-size: .75rem;
+      margin-top: -8px;
+    }
+    .stripe-powered svg { opacity: .6; }
+
+    /* Botón CTA — estado redirigiendo */
+    button.cta.redirecting {
+      background: linear-gradient(135deg, #64748b 0%, #475569 100%);
+      box-shadow: none;
+      cursor: wait;
+      opacity: .85;
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#">
+      <span class="brand-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+          <circle cx="12" cy="9" r="2.5"/>
+        </svg>
+      </span>
+      Paseo Seguro
+    </a>
+    <p class="tagline">Si el pronóstico anuncia lluvia, el precio baja solo.</p>
+  </div>
+</header>
+
+<main class="site-main">
+
+  <!-- ── 1. CATÁLOGO ───────────────────────────────────────── -->
+  <div class="preview-section">
+    <p class="preview-label">1 — Catálogo de tours</p>
+
+    <h1>Tours en República Dominicana</h1>
+    <p class="muted" style="margin-top:0;font-size:.95rem">
+      Elige una fecha dentro de los próximos 14 días. Si la probabilidad de lluvia supera el 60%, el descuento se aplica solo.
+    </p>
+
+    <div class="tour-grid" style="margin-top:28px">
+      <!-- Card 1 — Con descuento disponible -->
+      <a class="tour-card" href="#">
+        <div class="tour-card-img" style="background:linear-gradient(135deg,#0ea5e9 0%,#0369a1 60%,#0c4a6e 100%)">
+          <div class="tour-card-img-overlay"></div>
+          <span class="tour-card-img-emoji">🤿</span>
+          <span class="tour-card-img-slot">🌅 Mañana · 08:00–12:00</span>
+        </div>
+        <div class="tour-card-body">
+          <h3>Snorkel en Punta Cana</h3>
+          <p class="loc">📍 Punta Cana, La Altagracia</p>
+          <p class="desc">Explora los arrecifes de coral más vibrantes del Caribe con guía certificado.</p>
+        </div>
+        <div class="foot">
+          <div>
+            <div class="price">$85.00 USD</div>
+            <div class="price-label">por persona</div>
+          </div>
+          <span class="capacity-pill">8 cupos</span>
+        </div>
+      </a>
+
+      <!-- Card 2 — Normal -->
+      <a class="tour-card" href="#">
+        <div class="tour-card-img" style="background:linear-gradient(135deg,#10b981 0%,#059669 60%,#064e3b 100%)">
+          <div class="tour-card-img-overlay"></div>
+          <span class="tour-card-img-emoji">🌊</span>
+          <span class="tour-card-img-slot">🌇 Tarde · 14:00–18:00</span>
+        </div>
+        <div class="tour-card-body">
+          <h3>Cataratas del Limón</h3>
+          <p class="loc">📍 Las Terrenas, Samaná</p>
+          <p class="desc">Caminata por la selva tropical hasta las cascadas más espectaculares del país.</p>
+        </div>
+        <div class="foot">
+          <div>
+            <div class="price">$65.00 USD</div>
+            <div class="price-label">por persona</div>
+          </div>
+          <span class="capacity-pill">12 cupos</span>
+        </div>
+      </a>
+
+      <!-- Card 3 — Casi lleno -->
+      <a class="tour-card" href="#">
+        <div class="tour-card-img" style="background:linear-gradient(135deg,#f59e0b 0%,#d97706 60%,#92400e 100%)">
+          <div class="tour-card-img-overlay"></div>
+          <span class="tour-card-img-emoji">🐋</span>
+          <span class="tour-card-img-slot">🌄 Mañana · 06:30–11:00</span>
+        </div>
+        <div class="tour-card-body">
+          <h3>Avistamiento de Ballenas Jorobadas</h3>
+          <p class="loc">📍 Samaná, Samaná</p>
+          <p class="desc">Temporada enero-marzo. Observa a las ballenas jorobadas en su migración anual.</p>
+        </div>
+        <div class="foot">
+          <div>
+            <div class="price">$120.00 USD</div>
+            <div class="price-label">por persona</div>
+          </div>
+          <span style="font-size:.74rem;font-weight:600;color:var(--warn-ink);background:var(--warn-soft);border-radius:20px;padding:3px 9px;">2 cupos</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- ── 2. DETALLE + PANEL ────────────────────────────────── -->
+  <div class="preview-section">
+    <p class="preview-label">2 — Página de detalle + panel de reserva</p>
+
+    <div class="detail">
+      <!-- Columna izquierda: info del tour -->
+      <div class="body">
+        <h1>Snorkel en Punta Cana</h1>
+        <p class="muted" style="margin:0 0 16px;font-size:.95rem">📍 Punta Cana, La Altagracia</p>
+        <p>Explora los arrecifes de coral más vibrantes del Caribe con guía certificado. Equipo incluido, instructores bilingües. Ideal para toda la familia.</p>
+
+        <dl class="facts">
+          <div>
+            <dt>Duración</dt>
+            <dd>4 horas</dd>
+          </div>
+          <div>
+            <dt>Franjas</dt>
+            <dd>Mañana · Tarde</dd>
+          </div>
+          <div>
+            <dt>Horario</dt>
+            <dd>08:00–12:00 / 14:00–18:00</dd>
+          </div>
+          <div>
+            <dt>Precio base</dt>
+            <dd style="font-weight:700">$85.00 USD</dd>
+          </div>
+          <div>
+            <dt>Cupo máximo</dt>
+            <dd>12 personas</dd>
+          </div>
+        </dl>
+      </div>
+
+      <!-- Columna derecha: panel de reserva -->
+      <form class="panel" onsubmit="return false">
+        <div class="panel-header">
+          <h2>Reserva tu fecha</h2>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="date">Fecha</label>
+            <input id="date" type="date" value="2026-09-15" />
+          </div>
+          <div class="field">
+            <label for="slot">Franja</label>
+            <select id="slot">
+              <option>🌅 Mañana</option>
+              <option>🌇 Tarde</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="passengers">Pax</label>
+            <input id="passengers" type="number" value="2" min="1" max="10" />
+          </div>
+        </div>
+
+        <!-- Cupos disponibles -->
+        <span class="spots-ok">✓ 8 de 12 cupos disponibles</span>
+
+        <!-- Weather badge — CON descuento -->
+        <div class="weather discount">
+          <div class="weather-top">
+            <span class="headline">🌧 Lluvia prevista</span>
+            <span class="rain-pct">72%</span>
+          </div>
+          <div class="rainbar"><span style="width:72%"></span></div>
+          <span class="detail-line">Supera el 60%: descuento del 20% aplicado por persona.</span>
+        </div>
+
+        <!-- Precio CON descuento -->
+        <div class="total">
+          <span class="strike">$170.00 USD</span>
+          <span class="final">$136.00 USD</span>
+          <span class="save">🌿 Ahorras $34.00 por lluvia prevista</span>
+          <span class="muted" style="font-size:.8rem;margin-top:4px">($68.00 × 2 personas)</span>
+        </div>
+
+        <div class="field">
+          <label for="name">Nombre completo</label>
+          <input id="name" type="text" placeholder="Joel Santos" value="Joel Santos" />
+        </div>
+        <div class="field">
+          <label for="email">Correo electrónico</label>
+          <input id="email" type="email" placeholder="tucorreo@ejemplo.com" value="joels9568@gmail.com" />
+        </div>
+
+        <button class="cta" type="submit">Pagar y reservar →</button>
+
+        <p class="muted" style="font-size:.78rem;margin:0;text-align:center">
+          El precio lo calcula el servidor. Pago procesado por Stripe; nunca vemos tu tarjeta.
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- ── 3. WEATHER BADGE — ESTADOS ───────────────────────── -->
+  <div class="preview-section">
+    <p class="preview-label">3 — WeatherBadge — todos los estados</p>
+
+    <div style="display:grid;gap:14px;max-width:460px">
+      <!-- Sin lluvia -->
+      <div class="weather">
+        <div class="weather-top">
+          <span class="headline">🌤 Probabilidad de lluvia</span>
+          <span class="rain-pct">18%</span>
+        </div>
+        <div class="rainbar"><span style="width:18%"></span></div>
+        <span class="detail-line">Pronóstico en vivo. Precio base sin descuento.</span>
+      </div>
+
+      <!-- Con descuento (>60%) -->
+      <div class="weather discount">
+        <div class="weather-top">
+          <span class="headline">🌧 Lluvia prevista — descuento activo</span>
+          <span class="rain-pct">72%</span>
+        </div>
+        <div class="rainbar"><span style="width:72%"></span></div>
+        <span class="detail-line">Supera el 60%: descuento del 20% aplicado por persona.</span>
+      </div>
+
+      <!-- Dato reciente / stale -->
+      <div class="weather unknown">
+        <div class="weather-top">
+          <span class="headline">⚠️ Dato reciente de lluvia</span>
+          <span class="rain-pct" style="color:var(--warn-dark)">45%</span>
+        </div>
+        <div class="rainbar" style="background:#fde68a"><span style="width:45%;background:linear-gradient(90deg,var(--warn),var(--warn-dark))"></span></div>
+        <span class="detail-line">Dato reciente; proveedor no disponible ahora.</span>
+      </div>
+
+      <!-- No disponible -->
+      <div class="weather unknown">
+        <span class="headline">⚠️ No pudimos consultar el pronóstico</span>
+        <span class="detail-line">Se muestra el precio base. Inténtalo de nuevo más tarde.</span>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- ── 4. ALERTAS Y BADGES ───────────────────────────────── -->
+  <div class="preview-section">
+    <p class="preview-label">4 — Alertas y badges</p>
+
+    <div style="display:flex;flex-direction:column;gap:10px;max-width:460px;margin-bottom:24px">
+      <div class="alert info">Consultando pronóstico y cupos…</div>
+      <div class="alert warn">El pronóstico cambió y con él el precio. Vuelve a consultar.</div>
+      <div class="alert error">Solo quedan 1 cupo(s). Reduce el número de pasajeros.</div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:10px">
+      <span class="badge ok">CONFIRMED</span>
+      <span class="badge warn">PENDING</span>
+      <span class="badge danger">PAYMENT_FAILED</span>
+      <span class="badge info">EXPIRED</span>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:12px">
+      <span class="spots-ok">✓ 8 cupos disponibles</span>
+      <span class="spots-low">⚠ 2 cupos restantes</span>
+      <span class="spots-out">✕ Sin cupos disponibles</span>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- ── 5. CONFIRMACIÓN ───────────────────────────────────── -->
+  <div class="preview-section">
+    <p class="preview-label">5 — Página de confirmación (CONFIRMED)</p>
+
+    <div class="confirm">
+      <span class="badge ok">CONFIRMED</span>
+      <h1 style="margin-top:14px">¡Listo, Joel! 🎉</h1>
+      <p class="muted">Tu reserva quedó confirmada. Te enviamos el detalle por correo.</p>
+
+      <dl class="summary">
+        <div><dt>Reserva</dt><dd style="font-family:monospace;font-size:.85rem">bk_9f3a7c2d</dd></div>
+        <div><dt>Tour</dt><dd>Snorkel en Punta Cana</dd></div>
+        <div><dt>Destino</dt><dd>Punta Cana, La Altagracia</dd></div>
+        <div><dt>Fecha</dt><dd>lun 15 sep 2026</dd></div>
+        <div><dt>Franja</dt><dd>🌅 Mañana</dd></div>
+        <div><dt>Pasajeros</dt><dd>2 personas</dd></div>
+        <div><dt>Lluvia prevista</dt><dd>72%</dd></div>
+        <div>
+          <dt>Descuento por lluvia</dt>
+          <dd style="color:var(--ok-dark);font-weight:700">−$34.00 USD</dd>
+        </div>
+        <div>
+          <dt>Total pagado</dt>
+          <dd style="font-size:1.1rem;font-weight:800">$136.00 USD</dd>
+        </div>
+      </dl>
+
+      <p style="margin-top:26px;font-size:.9rem">
+        <a href="#">Volver al tour</a> · <a href="#">Ver todos los tours</a>
+      </p>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- ── 6. FLUJO DE PAGO: TRANSICIÓN + STRIPE CHECKOUT ───── -->
+  <div class="preview-section">
+    <p class="preview-label">6 — Flujo de pago: botón redirigiendo → Stripe Checkout</p>
+
+    <!-- 6a: Estado del botón mientras redirige -->
+    <p style="font-size:.82rem;color:var(--ink-3);margin-bottom:12px">
+      <strong style="color:var(--ink-2)">Paso 1</strong> — Al hacer clic, el botón cambia a este estado mientras el backend crea la sesión de Stripe:
+    </p>
+    <div style="max-width:420px;margin-bottom:32px">
+      <button class="cta redirecting" disabled style="width:100%;display:flex;align-items:center;justify-content:center;gap:10px">
+        <span class="spinner" style="border-top-color:#fff;border-color:rgba(255,255,255,.3)"></span>
+        Redirigiendo a Stripe…
+      </button>
+    </div>
+
+    <!-- 6b: Página de Stripe Checkout -->
+    <p style="font-size:.82rem;color:var(--ink-3);margin-bottom:16px">
+      <strong style="color:var(--ink-2)">Paso 2</strong> — El navegador abre <code style="background:var(--surface-2);padding:2px 6px;border-radius:4px;font-size:.8rem">checkout.stripe.com</code>. Así luce la página que ve el usuario:
+    </p>
+
+    <div class="stripe-page">
+      <!-- Panel izquierdo — resumen -->
+      <div class="stripe-summary">
+        <div class="stripe-logo">
+          <span class="stripe-logo-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+          </span>
+          <span class="stripe-logo-name">Paseo Seguro</span>
+        </div>
+
+        <div class="stripe-label">Total a pagar</div>
+        <div class="stripe-amount">$136.00</div>
+        <div class="stripe-amount-note">USD · 2 personas</div>
+
+        <div class="stripe-items">
+          <div class="stripe-item">
+            <div class="stripe-item-info">
+              <span class="stripe-item-name">Snorkel en Punta Cana × 2</span>
+              <span class="stripe-item-desc">🌅 Mañana · 15 sep 2026</span>
+            </div>
+            <span class="stripe-item-price">$170.00</span>
+          </div>
+          <div class="stripe-item">
+            <div class="stripe-item-info">
+              <span class="stripe-item-name">Descuento por lluvia prevista</span>
+              <span class="stripe-item-desc">
+                <span class="stripe-discount-badge">🌧 72% · −20%</span>
+              </span>
+            </div>
+            <span class="stripe-item-price" style="color:#6ee7b7">−$34.00</span>
+          </div>
+        </div>
+
+        <hr class="stripe-divider" />
+
+        <div class="stripe-total-row">
+          <span class="stripe-total-label">Total</span>
+          <span class="stripe-total-value">$136.00 USD</span>
+        </div>
+
+        <div class="stripe-secure">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Pago seguro con cifrado SSL
+        </div>
+      </div>
+
+      <!-- Panel derecho — formulario de Stripe -->
+      <div class="stripe-form-panel">
+        <div>
+          <p class="stripe-form-title">Paga con tarjeta</p>
+          <p class="stripe-form-subtitle">Joel Santos · joels9568@gmail.com</p>
+        </div>
+
+        <div class="stripe-field">
+          <label>Número de tarjeta</label>
+          <div class="stripe-field-card">
+            <span class="stripe-card-number">4242  4242  4242  4242</span>
+            <div class="stripe-card-icons">
+              <span class="stripe-card-icon visa">VISA</span>
+              <span class="stripe-card-icon mc">MC</span>
+              <span class="stripe-card-icon" style="font-size:.5rem">AMEX</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stripe-field-row">
+          <div class="stripe-field">
+            <label>Fecha de vencimiento</label>
+            <input type="text" placeholder="MM / AA" value="12 / 27" />
+          </div>
+          <div class="stripe-field">
+            <label>CVC</label>
+            <input type="text" placeholder="•••" value="123" />
+          </div>
+        </div>
+
+        <div class="stripe-field">
+          <label>País o región</label>
+          <select>
+            <option>🇩🇴 República Dominicana</option>
+            <option>🇺🇸 Estados Unidos</option>
+            <option>🇪🇸 España</option>
+          </select>
+        </div>
+
+        <button class="stripe-pay-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Pagar $136.00 USD
+        </button>
+
+        <div class="stripe-powered">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.591-7.305z"/></svg>
+          Con tecnología de Stripe · Privacidad · Términos
+        </div>
+      </div>
+    </div>
+
+    <!-- 6c: Post-pago -->
+    <p style="font-size:.82rem;color:var(--ink-3);margin-top:24px;margin-bottom:0">
+      <strong style="color:var(--ink-2)">Paso 3</strong> — Tras el pago, Stripe redirige a <code style="background:var(--surface-2);padding:2px 6px;border-radius:4px;font-size:.8rem">/reservas/confirmacion?session_id=…</code> → página de confirmación (Sección 5 arriba).
+    </p>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  Pronóstico por Open-Meteo · Pagos por Stripe (modo prueba) · Preview CSS — Paseo Seguro
+</footer>
+
+</body>
+</html>
