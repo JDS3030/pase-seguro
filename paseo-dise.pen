@@ -1,0 +1,4686 @@
+{
+  "version": "2.17",
+  "children": [
+    {
+      "type": "frame",
+      "id": "IY7uq",
+      "name": "Landing · Desktop 1440",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "layout": "vertical",
+      "fill": "$caribe/bg",
+      "clip": false,
+      "children": [
+        {
+          "type": "frame",
+          "id": "E1Ki3",
+          "name": "Hero (100svh)",
+          "layout": "vertical",
+          "width": 1440,
+          "height": 760,
+          "fill": "$hero/bg",
+          "clip": true,
+          "children": [
+            {
+              "type": "frame",
+              "id": "TquWo",
+              "name": "Cabecera",
+              "layout": "horizontal",
+              "width": 1440,
+              "padding": [
+                22,
+                120
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "LmlZG",
+                  "name": "Marca",
+                  "layout": "horizontal",
+                  "gap": 9,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "C3J27",
+                      "width": 9,
+                      "height": 9,
+                      "fill": "$hero/ink"
+                    },
+                    {
+                      "type": "text",
+                      "id": "XDCG2",
+                      "content": "Paseo Seguro",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "600",
+                      "fill": "$hero/ink",
+                      "lineHeight": 1.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "AJ71f",
+                  "name": "Nav",
+                  "layout": "horizontal",
+                  "gap": 6,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "gCtjf",
+                      "name": "Nav/Inicio",
+                      "layout": "horizontal",
+                      "padding": [
+                        7,
+                        12
+                      ],
+                      "cornerRadius": 7,
+                      "fill": "$hero/veil",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "EONYl",
+                          "content": "Inicio",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fill": "$hero/ink",
+                          "lineHeight": 1.5
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "cMz9C",
+                      "name": "Nav/Tours",
+                      "layout": "horizontal",
+                      "padding": [
+                        7,
+                        12
+                      ],
+                      "cornerRadius": 7,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "IZ4SO",
+                          "content": "Tours",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fill": "$hero/ink",
+                          "lineHeight": 1.5
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "QfDPr",
+                      "name": "Selector de tema",
+                      "layout": "horizontal",
+                      "gap": 2,
+                      "padding": 3,
+                      "cornerRadius": 999,
+                      "fill": "$hero/veil",
+                      "stroke": "$hero/veil",
+                      "strokeWidth": 1,
+                      "strokeAlignment": "inner",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Na1He",
+                          "name": "Auto",
+                          "layout": "horizontal",
+                          "padding": [
+                            6,
+                            7
+                          ],
+                          "cornerRadius": 999,
+                          "fill": "$hero/veil",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "PVNPk",
+                              "icon": "contrast",
+                              "library": "lucide",
+                              "fill": "$hero/ink",
+                              "width": 14,
+                              "height": 14
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "MbXDu",
+                          "name": "Claro",
+                          "layout": "horizontal",
+                          "padding": [
+                            6,
+                            7
+                          ],
+                          "cornerRadius": 999,
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "dcm4p",
+                              "icon": "sun",
+                              "library": "lucide",
+                              "fill": "$hero/ink",
+                              "width": 14,
+                              "height": 14
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "oOsFa",
+                          "name": "Oscuro",
+                          "layout": "horizontal",
+                          "padding": [
+                            6,
+                            7
+                          ],
+                          "cornerRadius": 999,
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "CL1mH",
+                              "icon": "moon",
+                              "library": "lucide",
+                              "fill": "$hero/ink",
+                              "width": 14,
+                              "height": 14
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NDi9L",
+              "name": "Contenido del hero",
+              "layout": "vertical",
+              "padding": [
+                64,
+                120
+              ],
+              "gap": 22,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "sye9b",
+                  "name": "Eyebrow",
+                  "layout": "horizontal",
+                  "gap": 9,
+                  "alignItems": "center",
+                  "padding": [
+                    7,
+                    14
+                  ],
+                  "cornerRadius": 999,
+                  "fill": "$hero/veil",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "GsbeK",
+                      "width": 7,
+                      "height": 7,
+                      "fill": "$caribe/ok"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Xgzg2",
+                      "content": "PRONÓSTICO EN VIVO · OPEN-METEO",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "500",
+                      "fill": "$hero/ink",
+                      "lineHeight": 1.5,
+                      "letterSpacing": 1.3
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "TzAeK",
+                  "name": "Título",
+                  "layout": "vertical",
+                  "gap": 0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "2Rann",
+                      "content": "Si el pronóstico anuncia lluvia,",
+                      "fontFamily": "Inter",
+                      "fontSize": 64,
+                      "fontWeight": "700",
+                      "fill": "$hero/ink",
+                      "lineHeight": 1.05,
+                      "letterSpacing": -2.2,
+                      "width": 900,
+                      "textGrowth": "fixed-width"
+                    },
+                    {
+                      "type": "text",
+                      "id": "76dEy",
+                      "content": "el precio baja solo.",
+                      "fontFamily": "Inter",
+                      "fontSize": 64,
+                      "fontWeight": "700",
+                      "fill": "$hero/accent",
+                      "lineHeight": 1.05,
+                      "letterSpacing": -2.2,
+                      "width": 900,
+                      "textGrowth": "fixed-width"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "OmXRr",
+                  "content": "Tours por República Dominicana con precio dinámico. Consultamos el clima de tu fecha antes de cobrarte: cuando la probabilidad de lluvia pasa del 60%, el descuento se aplica automáticamente. Sin cupones, sin pedirlo.",
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "normal",
+                  "fill": "$hero/ink-soft",
+                  "lineHeight": 1.6,
+                  "width": 620,
+                  "textGrowth": "fixed-width"
+                },
+                {
+                  "type": "frame",
+                  "id": "RJmCG",
+                  "name": "CTAs",
+                  "layout": "horizontal",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "9AW7h",
+                      "name": "Botón/Ver tours disponibles",
+                      "layout": "horizontal",
+                      "fill": "$hero/ink",
+                      "cornerRadius": 9,
+                      "padding": [
+                        13,
+                        22
+                      ],
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "vftva",
+                          "content": "Ver tours disponibles",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "600",
+                          "fill": "$hero/bg",
+                          "lineHeight": 1.5
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dDZFl",
+                      "name": "Botón/Cómo funciona",
+                      "layout": "horizontal",
+                      "fill": "$hero/veil",
+                      "cornerRadius": 9,
+                      "padding": [
+                        13,
+                        22
+                      ],
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ipTga",
+                          "content": "Cómo funciona",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "600",
+                          "fill": "$hero/ink",
+                          "lineHeight": 1.5
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "paMxx",
+                  "name": "Métricas",
+                  "layout": "horizontal",
+                  "gap": 48,
+                  "padding": [
+                    10,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "nar3Z",
+                      "name": "Métrica/Tours",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "mUXiA",
+                          "content": "TOURS ACTIVOS",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "500",
+                          "fill": "$hero/ink-soft",
+                          "lineHeight": 1.5,
+                          "letterSpacing": 1.2
+                        },
+                        {
+                          "type": "text",
+                          "id": "PyhzA",
+                          "content": "3",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "600",
+                          "fill": "$hero/ink",
+                          "lineHeight": 1.5
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Kgcjn",
+                      "name": "Métrica/Desde",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Lt4bn",
+                          "content": "DESDE",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "500",
+                          "fill": "$hero/ink-soft",
+                          "lineHeight": 1.5,
+                          "letterSpacing": 1.2
+                        },
+                        {
+                          "type": "text",
+                          "id": "lz2MP",
+                          "content": "RD$1,800.00",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "600",
+                          "fill": "$hero/ink",
+                          "lineHeight": 1.5
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "efnLO",
+                      "name": "Métrica/Ventana",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CqaXN",
+                          "content": "VENTANA DE PRONÓSTICO",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "500",
+                          "fill": "$hero/ink-soft",
+                          "lineHeight": 1.5,
+                          "letterSpacing": 1.2
+                        },
+                        {
+                          "type": "text",
+                          "id": "v1sye",
+                          "content": "14 días",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "600",
+                          "fill": "$hero/ink",
+                          "lineHeight": 1.5
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "E6wSt",
+          "name": "Sección · Cómo funciona",
+          "layout": "vertical",
+          "width": 1440,
+          "padding": [
+            76,
+            120
+          ],
+          "gap": 34,
+          "fill": "$caribe/bg",
+          "children": [
+            {
+              "type": "frame",
+              "id": "UmkVO",
+              "name": "Encabezado",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ylOjt",
+                  "content": "Cómo funciona",
+                  "fontFamily": "Inter",
+                  "fontSize": 30,
+                  "fontWeight": "700",
+                  "fill": "$caribe/ink",
+                  "lineHeight": 1.5,
+                  "letterSpacing": -0.6
+                },
+                {
+                  "type": "text",
+                  "id": "6o0Np",
+                  "content": "Tres pasos. El precio se calcula en el servidor en el momento de reservar, nunca en tu navegador.",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal",
+                  "fill": "$caribe/ink-3",
+                  "lineHeight": 1.5,
+                  "width": 680,
+                  "textGrowth": "fixed-width"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "iLc7b",
+              "name": "Pasos",
+              "layout": "horizontal",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "TzqA0",
+                  "layout": "vertical",
+                  "fill": "$caribe/surface",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "cornerRadius": 10,
+                  "padding": 20,
+                  "gap": 12,
+                  "width": 360,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "y4EMf",
+                      "name": "Badge/01",
+                      "layout": "horizontal",
+                      "fill": "$caribe/accent-soft",
+                      "cornerRadius": 999,
+                      "padding": [
+                        5,
+                        11
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "8JmR8",
+                          "content": "01",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "500",
+                          "fill": "$caribe/accent",
+                          "lineHeight": 1.5,
+                          "letterSpacing": 0.6
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Adggc",
+                      "content": "Elige fecha y franja",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600",
+                      "fill": "$caribe/ink",
+                      "lineHeight": 1.5,
+                      "width": 318,
+                      "textGrowth": "fixed-width"
+                    },
+                    {
+                      "type": "text",
+                      "id": "G9qpV",
+                      "content": "Dentro de los próximos 14 días. El calendario solo abre fechas con pronóstico disponible.",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal",
+                      "fill": "$caribe/ink-2",
+                      "lineHeight": 1.55,
+                      "width": 318,
+                      "textGrowth": "fixed-width"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "66nVb",
+                  "layout": "vertical",
+                  "fill": "$caribe/surface",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "cornerRadius": 10,
+                  "padding": 20,
+                  "gap": 12,
+                  "width": 360,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "l7Uei",
+                      "name": "Badge/02",
+                      "layout": "horizontal",
+                      "fill": "$caribe/accent-soft",
+                      "cornerRadius": 999,
+                      "padding": [
+                        5,
+                        11
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "5MFsH",
+                          "content": "02",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "500",
+                          "fill": "$caribe/accent",
+                          "lineHeight": 1.5,
+                          "letterSpacing": 0.6
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "oEJP2",
+                      "content": "El servidor consulta el clima",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600",
+                      "fill": "$caribe/ink",
+                      "lineHeight": 1.5,
+                      "width": 318,
+                      "textGrowth": "fixed-width"
+                    },
+                    {
+                      "type": "text",
+                      "id": "NNern",
+                      "content": "Pronóstico horario de Open-Meteo para las coordenadas exactas del destino y la franja que elegiste.",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal",
+                      "fill": "$caribe/ink-2",
+                      "lineHeight": 1.55,
+                      "width": 318,
+                      "textGrowth": "fixed-width"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "USHL8",
+                  "layout": "vertical",
+                  "fill": "$caribe/surface",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "cornerRadius": 10,
+                  "padding": 20,
+                  "gap": 12,
+                  "width": 360,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dclsx",
+                      "name": "Badge/03",
+                      "layout": "horizontal",
+                      "fill": "$caribe/accent-soft",
+                      "cornerRadius": 999,
+                      "padding": [
+                        5,
+                        11
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "erACp",
+                          "content": "03",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "500",
+                          "fill": "$caribe/accent",
+                          "lineHeight": 1.5,
+                          "letterSpacing": 0.6
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "HKifx",
+                      "content": "Pagas el precio ya ajustado",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600",
+                      "fill": "$caribe/ink",
+                      "lineHeight": 1.5,
+                      "width": 318,
+                      "textGrowth": "fixed-width"
+                    },
+                    {
+                      "type": "text",
+                      "id": "i5CvQ",
+                      "content": "Si la lluvia prevista supera el 60%, el descuento del 20% ya viene aplicado en el total.",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal",
+                      "fill": "$caribe/ink-2",
+                      "lineHeight": 1.55,
+                      "width": 318,
+                      "textGrowth": "fixed-width"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ue1cr",
+          "name": "Sección · Destinos destacados",
+          "layout": "vertical",
+          "width": 1440,
+          "padding": [
+            38,
+            120
+          ],
+          "gap": 26,
+          "fill": "$caribe/bg",
+          "children": [
+            {
+              "type": "frame",
+              "id": "7VVTi",
+              "name": "Encabezado",
+              "layout": "horizontal",
+              "width": 1200,
+              "justifyContent": "space_between",
+              "alignItems": "end",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "uieeC",
+                  "name": "Texto",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "9cbMO",
+                      "content": "Destinos destacados",
+                      "fontFamily": "Inter",
+                      "fontSize": 30,
+                      "fontWeight": "700",
+                      "fill": "$caribe/ink",
+                      "lineHeight": 1.5,
+                      "letterSpacing": -0.6
+                    },
+                    {
+                      "type": "text",
+                      "id": "eEeUt",
+                      "content": "Playas, montaña y ciudad colonial — todos con precio por clima.",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal",
+                      "fill": "$caribe/ink-3",
+                      "lineHeight": 1.5
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "IxVc5",
+                  "content": "Ver los 3 tours →",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "fill": "$caribe/accent",
+                  "lineHeight": 1.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "T11NC",
+              "name": "Tarjetas",
+              "layout": "horizontal",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "SLDCD",
+                  "layout": "vertical",
+                  "fill": "$caribe/surface",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "cornerRadius": 10,
+                  "padding": 20,
+                  "gap": 9,
+                  "width": 360,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Y96vw",
+                      "content": "Isla Saona en catamarán",
+                      "fontFamily": "Inter",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "fill": "$caribe/ink",
+                      "lineHeight": 1.5,
+                      "width": 318,
+                      "textGrowth": "fixed-width"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fRE5e",
+                      "content": "Bayahíbe, La Altagracia",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal",
+                      "fill": "$caribe/ink-3",
+                      "lineHeight": 1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "32A8Y",
+                      "content": "Día completo a la isla: piscina natural, almuerzo dominicano y regreso en lancha rápida.",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal",
+                      "fill": "$caribe/ink-2",
+                      "lineHeight": 1.55,
+                      "width": 318,
+                      "textGrowth": "fixed-width"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NQyyL",
+                      "name": "Separador",
+                      "layout": "vertical",
+                      "width": 318,
+                      "padding": [
+                        6,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "b3FKa",
+                          "width": 318,
+                          "height": 1,
+                          "fill": "$caribe/line"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Uvy7V",
+                      "name": "Pie de tarjeta",
+                      "layout": "horizontal",
+                      "width": 318,
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "aMeff",
+                          "content": "RD$4,500.00",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600",
+                          "fill": "$caribe/ink",
+                          "lineHeight": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "Ohq4A",
+                          "content": "9 h",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal",
+                          "fill": "$caribe/ink-3",
+                          "lineHeight": 1.5
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "5puzQ",
+                  "layout": "vertical",
+                  "fill": "$caribe/surface",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "cornerRadius": 10,
+                  "padding": 20,
+                  "gap": 9,
+                  "width": 360,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "1IfHW",
+                      "content": "27 Charcos de Damajagua",
+                      "fontFamily": "Inter",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "fill": "$caribe/ink",
+                      "lineHeight": 1.5,
+                      "width": 318,
+                      "textGrowth": "fixed-width"
+                    },
+                    {
+                      "type": "text",
+                      "id": "GbtMf",
+                      "content": "Imbert, Puerto Plata",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal",
+                      "fill": "$caribe/ink-3",
+                      "lineHeight": 1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "Ebo9S",
+                      "content": "Salto y descenso por cascadas naturales con guía certificado y equipo incluido.",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal",
+                      "fill": "$caribe/ink-2",
+                      "lineHeight": 1.55,
+                      "width": 318,
+                      "textGrowth": "fixed-width"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "6Fq5a",
+                      "name": "Separador",
+                      "layout": "vertical",
+                      "width": 318,
+                      "padding": [
+                        6,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "hFXNQ",
+                          "width": 318,
+                          "height": 1,
+                          "fill": "$caribe/line"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "vQ7CF",
+                      "name": "Pie de tarjeta",
+                      "layout": "horizontal",
+                      "width": 318,
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "xtjRN",
+                          "content": "RD$3,200.00",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600",
+                          "fill": "$caribe/ink",
+                          "lineHeight": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "mHkW5",
+                          "content": "6 h",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal",
+                          "fill": "$caribe/ink-3",
+                          "lineHeight": 1.5
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "OHFRu",
+                  "layout": "vertical",
+                  "fill": "$caribe/surface",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "cornerRadius": 10,
+                  "padding": 20,
+                  "gap": 9,
+                  "width": 360,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qmOBZ",
+                      "content": "Zona Colonial a pie",
+                      "fontFamily": "Inter",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "fill": "$caribe/ink",
+                      "lineHeight": 1.5,
+                      "width": 318,
+                      "textGrowth": "fixed-width"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZW6m4",
+                      "content": "Santo Domingo, D.N.",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal",
+                      "fill": "$caribe/ink-3",
+                      "lineHeight": 1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "nyoL6",
+                      "content": "Recorrido por la primera ciudad de América con historiador local y café en la ruta.",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal",
+                      "fill": "$caribe/ink-2",
+                      "lineHeight": 1.55,
+                      "width": 318,
+                      "textGrowth": "fixed-width"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "w152c",
+                      "name": "Separador",
+                      "layout": "vertical",
+                      "width": 318,
+                      "padding": [
+                        6,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "uniiF",
+                          "width": 318,
+                          "height": 1,
+                          "fill": "$caribe/line"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "7n1Ay",
+                      "name": "Pie de tarjeta",
+                      "layout": "horizontal",
+                      "width": 318,
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Te8r0",
+                          "content": "RD$1,800.00",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600",
+                          "fill": "$caribe/ink",
+                          "lineHeight": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "khCEr",
+                          "content": "3 h",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal",
+                          "fill": "$caribe/ink-3",
+                          "lineHeight": 1.5
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "gU30Z",
+          "name": "Sección · Regla de precio",
+          "layout": "vertical",
+          "width": 1440,
+          "padding": [
+            38,
+            120
+          ],
+          "fill": "$caribe/bg",
+          "children": [
+            {
+              "type": "frame",
+              "id": "vDuPn",
+              "layout": "vertical",
+              "fill": "$caribe/surface",
+              "stroke": "$caribe/line",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "cornerRadius": 10,
+              "padding": 36,
+              "gap": 10,
+              "width": 1200,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "4GY08",
+                  "name": "Contenido",
+                  "layout": "horizontal",
+                  "gap": 36,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "gOIPO",
+                      "name": "Texto",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "width": 620,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "rKwtP",
+                          "name": "Badge/Regla de precio",
+                          "layout": "horizontal",
+                          "fill": "$caribe/accent-soft",
+                          "cornerRadius": 999,
+                          "padding": [
+                            5,
+                            11
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "3McRT",
+                              "content": "Regla de precio",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "500",
+                              "fill": "$caribe/accent",
+                              "lineHeight": 1.5,
+                              "letterSpacing": 0.6
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "YKbPi",
+                          "content": "Lluvia prevista sobre 60% = 20% menos",
+                          "fontFamily": "Inter",
+                          "fontSize": 28,
+                          "fontWeight": "700",
+                          "fill": "$caribe/ink",
+                          "lineHeight": 1.5,
+                          "letterSpacing": -0.5,
+                          "width": 560,
+                          "textGrowth": "fixed-width"
+                        },
+                        {
+                          "type": "text",
+                          "id": "zDmbX",
+                          "content": "Comparamos la probabilidad de lluvia de tu franja horaria contra el umbral. Si lo supera, el descuento entra al total antes de que pagues. Si el pronóstico cambia entre tu cotización y el pago, el servidor lo detecta y te pide confirmar el precio nuevo.",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal",
+                          "fill": "$caribe/ink-3",
+                          "lineHeight": 1.6,
+                          "width": 560,
+                          "textGrowth": "fixed-width"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "YdOhC",
+                          "name": "Botón/Elegir mi tour",
+                          "layout": "horizontal",
+                          "fill": "$caribe/accent",
+                          "cornerRadius": 9,
+                          "padding": [
+                            13,
+                            22
+                          ],
+                          "alignItems": "center",
+                          "justifyContent": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "1rpXj",
+                              "content": "Elegir mi tour",
+                              "fontFamily": "Inter",
+                              "fontSize": 15,
+                              "fontWeight": "600",
+                              "fill": "$caribe/accent-ink",
+                              "lineHeight": 1.5
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ayJKP",
+                      "name": "Demo",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "width": 380,
+                      "padding": 20,
+                      "cornerRadius": 9,
+                      "fill": "$caribe/surface-2",
+                      "stroke": "$caribe/line",
+                      "strokeWidth": 1,
+                      "strokeAlignment": "inner",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "lTaWE",
+                          "name": "Fila",
+                          "layout": "horizontal",
+                          "width": 338,
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Zx9eR",
+                              "content": "Lluvia prevista",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal",
+                              "fill": "$caribe/ink-2",
+                              "lineHeight": 1.5
+                            },
+                            {
+                              "type": "text",
+                              "id": "mm0Eq",
+                              "content": "78 %",
+                              "fontFamily": "Inter",
+                              "fontSize": 17,
+                              "fontWeight": "600",
+                              "fill": "$caribe/ink",
+                              "lineHeight": 1.5
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "rXwIS",
+                          "name": "Barra",
+                          "layout": "horizontal",
+                          "width": 338,
+                          "height": 6,
+                          "cornerRadius": 3,
+                          "fill": "$caribe/track",
+                          "clip": true,
+                          "children": [
+                            {
+                              "type": "rectangle",
+                              "id": "ITclo",
+                              "width": 264,
+                              "height": 6,
+                              "fill": "$caribe/accent",
+                              "cornerRadius": 3
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "5UyiC",
+                          "name": "Precio",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "width": 338,
+                          "padding": [
+                            6,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "8HGNW",
+                              "content": "RD$ 4,500.00",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal",
+                              "fill": "$caribe/ink-3",
+                              "lineHeight": 1.5
+                            },
+                            {
+                              "type": "text",
+                              "id": "kz2YS",
+                              "content": "RD$ 3,600.00",
+                              "fontFamily": "Inter",
+                              "fontSize": 26,
+                              "fontWeight": "700",
+                              "fill": "$caribe/ink",
+                              "lineHeight": 1.5
+                            },
+                            {
+                              "type": "text",
+                              "id": "5ofA7",
+                              "content": "Ahorras RD$ 900.00 por lluvia prevista",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "600",
+                              "fill": "$caribe/ok",
+                              "lineHeight": 1.5
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "DmO46",
+                          "content": "Ejemplo ilustrativo. Tu precio real lo calcula el servidor.",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "fill": "$caribe/ink-3",
+                          "lineHeight": 1.5
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "p5yft",
+          "name": "Pie",
+          "layout": "horizontal",
+          "width": 1440,
+          "padding": [
+            24,
+            120
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "P7Thn",
+              "content": "Pronóstico por Open-Meteo · Pagos por Stripe (modo prueba)",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "fill": "$caribe/ink-3",
+              "lineHeight": 1.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "mKRw6",
+      "name": "Catálogo · /tours",
+      "x": 1620,
+      "y": 0,
+      "width": 1440,
+      "height": 900,
+      "layout": "vertical",
+      "fill": "$caribe/bg",
+      "clip": true,
+      "children": [
+        {
+          "type": "frame",
+          "id": "2j9IH",
+          "name": "Cabecera",
+          "layout": "horizontal",
+          "width": 1440,
+          "padding": [
+            22,
+            120
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "JAXrF",
+              "name": "Marca",
+              "layout": "horizontal",
+              "gap": 9,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "6T2bw",
+                  "width": 9,
+                  "height": 9,
+                  "fill": "$caribe/accent"
+                },
+                {
+                  "type": "text",
+                  "id": "GfcCv",
+                  "content": "Paseo Seguro",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "600",
+                  "fill": "$caribe/ink",
+                  "lineHeight": 1.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "35Nnt",
+              "name": "Nav",
+              "layout": "horizontal",
+              "gap": 6,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "eBZcl",
+                  "name": "Nav/Inicio",
+                  "layout": "horizontal",
+                  "padding": [
+                    7,
+                    12
+                  ],
+                  "cornerRadius": 7,
+                  "fill": "$caribe/accent-soft",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "6bnZ3",
+                      "content": "Inicio",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "fill": "$caribe/accent",
+                      "lineHeight": 1.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "iEjH5",
+                  "name": "Nav/Tours",
+                  "layout": "horizontal",
+                  "padding": [
+                    7,
+                    12
+                  ],
+                  "cornerRadius": 7,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "IvRY6",
+                      "content": "Tours",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "fill": "$caribe/ink-2",
+                      "lineHeight": 1.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tQy92",
+                  "name": "Selector de tema",
+                  "layout": "horizontal",
+                  "gap": 2,
+                  "padding": 3,
+                  "cornerRadius": 999,
+                  "fill": "$caribe/surface",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "C84FL",
+                      "name": "Auto",
+                      "layout": "horizontal",
+                      "padding": [
+                        6,
+                        7
+                      ],
+                      "cornerRadius": 999,
+                      "fill": "$caribe/accent-soft",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "UH1RS",
+                          "icon": "contrast",
+                          "library": "lucide",
+                          "fill": "$caribe/accent",
+                          "width": 14,
+                          "height": 14
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CHJs1",
+                      "name": "Claro",
+                      "layout": "horizontal",
+                      "padding": [
+                        6,
+                        7
+                      ],
+                      "cornerRadius": 999,
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "8SfWo",
+                          "icon": "sun",
+                          "library": "lucide",
+                          "fill": "$caribe/ink-2",
+                          "width": 14,
+                          "height": 14
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "G16Jq",
+                      "name": "Oscuro",
+                      "layout": "horizontal",
+                      "padding": [
+                        6,
+                        7
+                      ],
+                      "cornerRadius": 999,
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "UJOkH",
+                          "icon": "moon",
+                          "library": "lucide",
+                          "fill": "$caribe/ink-2",
+                          "width": 14,
+                          "height": 14
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ORZbg",
+          "name": "Contenido",
+          "layout": "vertical",
+          "padding": [
+            40,
+            120
+          ],
+          "gap": 8,
+          "children": [
+            {
+              "type": "text",
+              "id": "rKFmA",
+              "content": "Tours en República Dominicana",
+              "fontFamily": "Inter",
+              "fontSize": 32,
+              "fontWeight": "700",
+              "fill": "$caribe/ink",
+              "lineHeight": 1.5,
+              "letterSpacing": -0.7
+            },
+            {
+              "type": "text",
+              "id": "IhGaM",
+              "content": "Elige una fecha dentro de los próximos 14 días. Si la probabilidad de lluvia supera el 60%, el descuento se aplica solo.",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "normal",
+              "fill": "$caribe/ink-3",
+              "lineHeight": 1.5,
+              "width": 760,
+              "textGrowth": "fixed-width"
+            },
+            {
+              "type": "frame",
+              "id": "YTimz",
+              "name": "Rejilla",
+              "layout": "horizontal",
+              "gap": 18,
+              "padding": [
+                13,
+                0
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "gmANb",
+                  "layout": "vertical",
+                  "fill": "$caribe/surface",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "cornerRadius": 10,
+                  "padding": 20,
+                  "gap": 9,
+                  "width": 360,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ybIcH",
+                      "content": "Isla Saona en catamarán",
+                      "fontFamily": "Inter",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "fill": "$caribe/ink",
+                      "lineHeight": 1.5,
+                      "width": 318,
+                      "textGrowth": "fixed-width"
+                    },
+                    {
+                      "type": "text",
+                      "id": "6zIZK",
+                      "content": "Bayahíbe, La Altagracia",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal",
+                      "fill": "$caribe/ink-3",
+                      "lineHeight": 1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "hFfSk",
+                      "content": "Día completo a la isla: piscina natural, almuerzo dominicano y regreso en lancha rápida.",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal",
+                      "fill": "$caribe/ink-2",
+                      "lineHeight": 1.55,
+                      "width": 318,
+                      "textGrowth": "fixed-width"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "69Z7z",
+                      "name": "Separador",
+                      "layout": "vertical",
+                      "width": 318,
+                      "padding": [
+                        6,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "e7IDA",
+                          "width": 318,
+                          "height": 1,
+                          "fill": "$caribe/line"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "56EHu",
+                      "name": "Pie de tarjeta",
+                      "layout": "horizontal",
+                      "width": 318,
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "rpEFi",
+                          "content": "RD$4,500.00",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600",
+                          "fill": "$caribe/ink",
+                          "lineHeight": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "vB507",
+                          "content": "9 h",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal",
+                          "fill": "$caribe/ink-3",
+                          "lineHeight": 1.5
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "NkIn3",
+                  "layout": "vertical",
+                  "fill": "$caribe/surface",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "cornerRadius": 10,
+                  "padding": 20,
+                  "gap": 9,
+                  "width": 360,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "7qiSX",
+                      "content": "27 Charcos de Damajagua",
+                      "fontFamily": "Inter",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "fill": "$caribe/ink",
+                      "lineHeight": 1.5,
+                      "width": 318,
+                      "textGrowth": "fixed-width"
+                    },
+                    {
+                      "type": "text",
+                      "id": "bcmjo",
+                      "content": "Imbert, Puerto Plata",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal",
+                      "fill": "$caribe/ink-3",
+                      "lineHeight": 1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "aRsuU",
+                      "content": "Salto y descenso por cascadas naturales con guía certificado y equipo incluido.",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal",
+                      "fill": "$caribe/ink-2",
+                      "lineHeight": 1.55,
+                      "width": 318,
+                      "textGrowth": "fixed-width"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "FULh2",
+                      "name": "Separador",
+                      "layout": "vertical",
+                      "width": 318,
+                      "padding": [
+                        6,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "wpNFg",
+                          "width": 318,
+                          "height": 1,
+                          "fill": "$caribe/line"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "yOA0H",
+                      "name": "Pie de tarjeta",
+                      "layout": "horizontal",
+                      "width": 318,
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "GNqTm",
+                          "content": "RD$3,200.00",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600",
+                          "fill": "$caribe/ink",
+                          "lineHeight": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "SH4Bb",
+                          "content": "6 h",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal",
+                          "fill": "$caribe/ink-3",
+                          "lineHeight": 1.5
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "B18AI",
+                  "layout": "vertical",
+                  "fill": "$caribe/surface",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "cornerRadius": 10,
+                  "padding": 20,
+                  "gap": 9,
+                  "width": 360,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "OIOnH",
+                      "content": "Zona Colonial a pie",
+                      "fontFamily": "Inter",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "fill": "$caribe/ink",
+                      "lineHeight": 1.5,
+                      "width": 318,
+                      "textGrowth": "fixed-width"
+                    },
+                    {
+                      "type": "text",
+                      "id": "n2INL",
+                      "content": "Santo Domingo, D.N.",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal",
+                      "fill": "$caribe/ink-3",
+                      "lineHeight": 1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "2io6V",
+                      "content": "Recorrido por la primera ciudad de América con historiador local y café en la ruta.",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal",
+                      "fill": "$caribe/ink-2",
+                      "lineHeight": 1.55,
+                      "width": 318,
+                      "textGrowth": "fixed-width"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "uMu57",
+                      "name": "Separador",
+                      "layout": "vertical",
+                      "width": 318,
+                      "padding": [
+                        6,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "OZw5l",
+                          "width": 318,
+                          "height": 1,
+                          "fill": "$caribe/line"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Ufqyg",
+                      "name": "Pie de tarjeta",
+                      "layout": "horizontal",
+                      "width": 318,
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "mnXm4",
+                          "content": "RD$1,800.00",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600",
+                          "fill": "$caribe/ink",
+                          "lineHeight": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "gi4pi",
+                          "content": "3 h",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal",
+                          "fill": "$caribe/ink-3",
+                          "lineHeight": 1.5
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "658R6",
+      "name": "Checkout · /mock-pago",
+      "x": 3240,
+      "y": 0,
+      "width": 1180,
+      "layout": "vertical",
+      "fill": "$caribe/bg",
+      "children": [
+        {
+          "type": "frame",
+          "id": "GYau5",
+          "name": "Cabecera",
+          "layout": "horizontal",
+          "width": 1180,
+          "padding": [
+            22,
+            120
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "R1mZe",
+              "name": "Marca",
+              "layout": "horizontal",
+              "gap": 9,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "09xhT",
+                  "width": 9,
+                  "height": 9,
+                  "fill": "$caribe/accent"
+                },
+                {
+                  "type": "text",
+                  "id": "GOWvG",
+                  "content": "Paseo Seguro",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "600",
+                  "fill": "$caribe/ink",
+                  "lineHeight": 1.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "6mMkg",
+              "name": "Nav",
+              "layout": "horizontal",
+              "gap": 6,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "JNG5K",
+                  "name": "Nav/Inicio",
+                  "layout": "horizontal",
+                  "padding": [
+                    7,
+                    12
+                  ],
+                  "cornerRadius": 7,
+                  "fill": "$caribe/accent-soft",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "EgbcW",
+                      "content": "Inicio",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "fill": "$caribe/accent",
+                      "lineHeight": 1.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nl1ks",
+                  "name": "Nav/Tours",
+                  "layout": "horizontal",
+                  "padding": [
+                    7,
+                    12
+                  ],
+                  "cornerRadius": 7,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Ejmlh",
+                      "content": "Tours",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "fill": "$caribe/ink-2",
+                      "lineHeight": 1.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "DxVxz",
+                  "name": "Selector de tema",
+                  "layout": "horizontal",
+                  "gap": 2,
+                  "padding": 3,
+                  "cornerRadius": 999,
+                  "fill": "$caribe/surface",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "i8RDe",
+                      "name": "Auto",
+                      "layout": "horizontal",
+                      "padding": [
+                        6,
+                        7
+                      ],
+                      "cornerRadius": 999,
+                      "fill": "$caribe/accent-soft",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "7RgLd",
+                          "icon": "contrast",
+                          "library": "lucide",
+                          "fill": "$caribe/accent",
+                          "width": 14,
+                          "height": 14
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "BGwBn",
+                      "name": "Claro",
+                      "layout": "horizontal",
+                      "padding": [
+                        6,
+                        7
+                      ],
+                      "cornerRadius": 999,
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "WguzD",
+                          "icon": "sun",
+                          "library": "lucide",
+                          "fill": "$caribe/ink-2",
+                          "width": 14,
+                          "height": 14
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "c2mlA",
+                      "name": "Oscuro",
+                      "layout": "horizontal",
+                      "padding": [
+                        6,
+                        7
+                      ],
+                      "cornerRadius": 999,
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "MxaOS",
+                          "icon": "moon",
+                          "library": "lucide",
+                          "fill": "$caribe/ink-2",
+                          "width": 14,
+                          "height": 14
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "uTCKM",
+          "name": "Contenido",
+          "layout": "vertical",
+          "padding": [
+            36,
+            100
+          ],
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "KMmGL",
+              "name": "Aviso de prueba",
+              "layout": "horizontal",
+              "width": 980,
+              "gap": 10,
+              "padding": [
+                10,
+                14
+              ],
+              "cornerRadius": 8,
+              "fill": "$caribe/warn-soft",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "fZ1T4",
+                  "content": "ENTORNO DE PRUEBA",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "fill": "$caribe/warn",
+                  "lineHeight": 1.5,
+                  "letterSpacing": 1.2
+                },
+                {
+                  "type": "text",
+                  "id": "36O8z",
+                  "content": "Pasarela simulada (MOCK_STRIPE=true). No se realiza ningún cargo real y los datos de tarjeta no salen de tu navegador.",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "fill": "$caribe/warn",
+                  "lineHeight": 1.5,
+                  "width": 800,
+                  "textGrowth": "fixed-width"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Uux6h",
+              "name": "Tarjeta de checkout",
+              "layout": "horizontal",
+              "width": 980,
+              "cornerRadius": 10,
+              "stroke": "$caribe/line",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "clip": true,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "d5uVz",
+                  "name": "Resumen",
+                  "layout": "vertical",
+                  "width": 490,
+                  "padding": [
+                    34,
+                    32
+                  ],
+                  "gap": 22,
+                  "fill": "$caribe/surface-2",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "k07zi",
+                      "name": "Comercio",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "vZWqr",
+                          "width": 9,
+                          "height": 9,
+                          "fill": "$caribe/accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "6hVVX",
+                          "content": "Paseo Seguro",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600",
+                          "fill": "$caribe/ink",
+                          "lineHeight": 1.5
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "znUle",
+                      "name": "Importe",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "5v4IS",
+                          "content": "Pagar a Paseo Seguro",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal",
+                          "fill": "$caribe/ink-3",
+                          "lineHeight": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "xXBWl",
+                          "content": "RD$7,200.00",
+                          "fontFamily": "Inter",
+                          "fontSize": 34,
+                          "fontWeight": "700",
+                          "fill": "$caribe/ink",
+                          "lineHeight": 1.5,
+                          "letterSpacing": -0.8
+                        }
+                      ]
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "ZvtEg",
+                      "width": 426,
+                      "height": 1,
+                      "fill": "$caribe/line"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nShWz",
+                      "name": "Artículo",
+                      "layout": "horizontal",
+                      "width": 426,
+                      "justifyContent": "space_between",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "QzKlI",
+                          "name": "Detalle",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "width": 300,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "a4wO5",
+                              "content": "Isla Saona en catamarán",
+                              "fontFamily": "Inter",
+                              "fontSize": 15,
+                              "fontWeight": "600",
+                              "fill": "$caribe/ink",
+                              "lineHeight": 1.5,
+                              "width": 300,
+                              "textGrowth": "fixed-width"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Ndor8",
+                              "content": "Bayahíbe, La Altagracia · sábado, 19 de septiembre de 2026 · Mañana",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal",
+                              "fill": "$caribe/ink-3",
+                              "lineHeight": 1.5,
+                              "width": 300,
+                              "textGrowth": "fixed-width"
+                            },
+                            {
+                              "type": "text",
+                              "id": "9Qtvn",
+                              "content": "2 pasajeros · RD$3,600.00 c/u",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal",
+                              "fill": "$caribe/ink-3",
+                              "lineHeight": 1.5
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "eyGFP",
+                          "content": "RD$7,200.00",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal",
+                          "fill": "$caribe/ink",
+                          "lineHeight": 1.5
+                        }
+                      ]
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "KbhNg",
+                      "width": 426,
+                      "height": 1,
+                      "fill": "$caribe/line"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dB8FA",
+                      "name": "Líneas",
+                      "layout": "vertical",
+                      "gap": 9,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "yagqq",
+                          "name": "Línea/Subtotal",
+                          "layout": "horizontal",
+                          "width": 426,
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "VpqCz",
+                              "content": "Subtotal",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal",
+                              "fill": "$caribe/ink-3",
+                              "lineHeight": 1.5
+                            },
+                            {
+                              "type": "text",
+                              "id": "GdWmP",
+                              "content": "RD$9,000.00",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal",
+                              "fill": "$caribe/ink",
+                              "lineHeight": 1.5
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "2gOCZ",
+                          "name": "Línea/Descuento por lluvia (20 %)",
+                          "layout": "horizontal",
+                          "width": 426,
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "r5vJI",
+                              "content": "Descuento por lluvia (20 %)",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal",
+                              "fill": "$caribe/ok",
+                              "lineHeight": 1.5
+                            },
+                            {
+                              "type": "text",
+                              "id": "GA9HK",
+                              "content": "−RD$1,800.00",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal",
+                              "fill": "$caribe/ok",
+                              "lineHeight": 1.5
+                            }
+                          ]
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "PeJMQ",
+                          "width": 426,
+                          "height": 1,
+                          "fill": "$caribe/line"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "2FINM",
+                          "name": "Línea/Total",
+                          "layout": "horizontal",
+                          "width": 426,
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "W9cy7",
+                              "content": "Total",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "700",
+                              "fill": "$caribe/ink",
+                              "lineHeight": 1.5
+                            },
+                            {
+                              "type": "text",
+                              "id": "8kyEk",
+                              "content": "RD$7,200.00",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "700",
+                              "fill": "$caribe/ink",
+                              "lineHeight": 1.5
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "sHzMt",
+                      "width": 426,
+                      "height": 1,
+                      "fill": "$caribe/line"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kAWRy",
+                      "name": "Cliente",
+                      "layout": "vertical",
+                      "gap": 3,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "xHsEP",
+                          "content": "RESERVA A NOMBRE DE",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "500",
+                          "fill": "$caribe/ink-3",
+                          "lineHeight": 1.5,
+                          "letterSpacing": 1.2
+                        },
+                        {
+                          "type": "text",
+                          "id": "rJ7sQ",
+                          "content": "Joel Santos",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal",
+                          "fill": "$caribe/ink",
+                          "lineHeight": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "TVsba",
+                          "content": "joels9568@gmail.com",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal",
+                          "fill": "$caribe/ink-3",
+                          "lineHeight": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "XpLcO",
+                          "content": "Ref. cmb7q1x0k0001x9",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "fill": "$caribe/ink-3",
+                          "lineHeight": 1.5
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "4jowQ",
+                  "name": "Formulario",
+                  "layout": "vertical",
+                  "width": 490,
+                  "padding": [
+                    34,
+                    32
+                  ],
+                  "gap": 16,
+                  "fill": "$caribe/surface",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dLU8u",
+                      "content": "Datos de pago",
+                      "fontFamily": "Inter",
+                      "fontSize": 19,
+                      "fontWeight": "600",
+                      "fill": "$caribe/ink",
+                      "lineHeight": 1.5
+                    },
+                    {
+                      "type": "frame",
+                      "id": "QADMq",
+                      "name": "Escenarios",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "eZ5oB",
+                          "content": "TARJETAS DE PRUEBA",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "500",
+                          "fill": "$caribe/ink-3",
+                          "lineHeight": 1.5,
+                          "letterSpacing": 1.2
+                        },
+                        {
+                          "type": "frame",
+                          "id": "jhxCi",
+                          "name": "Chips",
+                          "layout": "horizontal",
+                          "gap": 7,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "cHg7Z",
+                              "name": "Chip/Pago aprobado",
+                              "layout": "horizontal",
+                              "padding": [
+                                5,
+                                11
+                              ],
+                              "cornerRadius": 999,
+                              "fill": "$caribe/surface-2",
+                              "stroke": "$caribe/line",
+                              "strokeWidth": 1,
+                              "strokeAlignment": "inner",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "UEqWp",
+                                  "content": "Pago aprobado",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal",
+                                  "fill": "$caribe/ink-2",
+                                  "lineHeight": 1.5
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "0pMTh",
+                              "name": "Chip/Fondos insuficientes",
+                              "layout": "horizontal",
+                              "padding": [
+                                5,
+                                11
+                              ],
+                              "cornerRadius": 999,
+                              "fill": "$caribe/surface-2",
+                              "stroke": "$caribe/line",
+                              "strokeWidth": 1,
+                              "strokeAlignment": "inner",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "U6Dj9",
+                                  "content": "Fondos insuficientes",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal",
+                                  "fill": "$caribe/ink-2",
+                                  "lineHeight": 1.5
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "n3dwH",
+                              "name": "Chip/Tarjeta rechazada",
+                              "layout": "horizontal",
+                              "padding": [
+                                5,
+                                11
+                              ],
+                              "cornerRadius": 999,
+                              "fill": "$caribe/surface-2",
+                              "stroke": "$caribe/line",
+                              "strokeWidth": 1,
+                              "strokeAlignment": "inner",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "dNADh",
+                                  "content": "Tarjeta rechazada",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal",
+                                  "fill": "$caribe/ink-2",
+                                  "lineHeight": 1.5
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "EhG5t",
+                      "name": "Campo/Correo",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "OLRAx",
+                          "content": "Correo",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600",
+                          "fill": "$caribe/ink-2",
+                          "lineHeight": 1.5
+                        },
+                        {
+                          "type": "frame",
+                          "id": "8sUip",
+                          "name": "Input",
+                          "layout": "horizontal",
+                          "width": 426,
+                          "padding": [
+                            11,
+                            13
+                          ],
+                          "cornerRadius": 8,
+                          "fill": "$caribe/surface-2",
+                          "stroke": "$caribe/line",
+                          "strokeWidth": 1,
+                          "strokeAlignment": "inner",
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "XVH0i",
+                              "content": "joels9568@gmail.com",
+                              "fontFamily": "Inter",
+                              "fontSize": 15,
+                              "fontWeight": "normal",
+                              "fill": "$caribe/ink",
+                              "lineHeight": 1.5
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "13eZh",
+                      "name": "Campo/Tarjeta",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "YGN2w",
+                          "content": "Información de la tarjeta",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600",
+                          "fill": "$caribe/ink-2",
+                          "lineHeight": 1.5
+                        },
+                        {
+                          "type": "frame",
+                          "id": "vvFVi",
+                          "name": "Caja de tarjeta",
+                          "layout": "vertical",
+                          "width": 426,
+                          "cornerRadius": 8,
+                          "fill": "$caribe/surface-2",
+                          "stroke": "$caribe/line",
+                          "strokeWidth": 1,
+                          "strokeAlignment": "inner",
+                          "clip": true,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "rWpm8",
+                              "name": "Número",
+                              "layout": "horizontal",
+                              "width": 426,
+                              "padding": [
+                                11,
+                                13
+                              ],
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "rrNRU",
+                                  "content": "1234 1234 1234 1234",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 15,
+                                  "fontWeight": "normal",
+                                  "fill": "$caribe/ink-3",
+                                  "lineHeight": 1.5
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "KSLmO",
+                                  "content": "VISA",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 10,
+                                  "fontWeight": "600",
+                                  "fill": "$caribe/accent",
+                                  "lineHeight": 1.5,
+                                  "letterSpacing": 0.8
+                                }
+                              ]
+                            },
+                            {
+                              "type": "rectangle",
+                              "id": "pGP6m",
+                              "width": 426,
+                              "height": 1,
+                              "fill": "$caribe/line"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "xEEwn",
+                              "name": "Vencimiento y CVC",
+                              "layout": "horizontal",
+                              "width": 426,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "arqBb",
+                                  "name": "MM/AA",
+                                  "layout": "horizontal",
+                                  "width": 213,
+                                  "padding": [
+                                    11,
+                                    13
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "4RcOd",
+                                      "content": "MM/AA",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 15,
+                                      "fontWeight": "normal",
+                                      "fill": "$caribe/ink-3",
+                                      "lineHeight": 1.5
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "rectangle",
+                                  "id": "NcgoI",
+                                  "width": 1,
+                                  "height": 42,
+                                  "fill": "$caribe/line"
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "RkJpO",
+                                  "name": "CVC",
+                                  "layout": "horizontal",
+                                  "width": 212,
+                                  "padding": [
+                                    11,
+                                    13
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "reWf6",
+                                      "content": "CVC",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 15,
+                                      "fontWeight": "normal",
+                                      "fill": "$caribe/ink-3",
+                                      "lineHeight": 1.5
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "xjP1M",
+                      "name": "Campo/Nombre en la tarjeta",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CZ0N1",
+                          "content": "Nombre en la tarjeta",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600",
+                          "fill": "$caribe/ink-2",
+                          "lineHeight": 1.5
+                        },
+                        {
+                          "type": "frame",
+                          "id": "VqyZj",
+                          "name": "Input",
+                          "layout": "horizontal",
+                          "width": 426,
+                          "padding": [
+                            11,
+                            13
+                          ],
+                          "cornerRadius": 8,
+                          "fill": "$caribe/surface-2",
+                          "stroke": "$caribe/line",
+                          "strokeWidth": 1,
+                          "strokeAlignment": "inner",
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "XXnCB",
+                              "content": "Joel Santos",
+                              "fontFamily": "Inter",
+                              "fontSize": 15,
+                              "fontWeight": "normal",
+                              "fill": "$caribe/ink",
+                              "lineHeight": 1.5
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "KKF0R",
+                      "name": "Campo/País o región",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "usJWV",
+                          "content": "País o región",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600",
+                          "fill": "$caribe/ink-2",
+                          "lineHeight": 1.5
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ufIfB",
+                          "name": "Input",
+                          "layout": "horizontal",
+                          "width": 426,
+                          "padding": [
+                            11,
+                            13
+                          ],
+                          "cornerRadius": 8,
+                          "fill": "$caribe/surface-2",
+                          "stroke": "$caribe/line",
+                          "strokeWidth": 1,
+                          "strokeAlignment": "inner",
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "06lBP",
+                              "content": "República Dominicana",
+                              "fontFamily": "Inter",
+                              "fontSize": 15,
+                              "fontWeight": "normal",
+                              "fill": "$caribe/ink",
+                              "lineHeight": 1.5
+                            },
+                            {
+                              "type": "icon",
+                              "id": "xLgD4",
+                              "icon": "chevron-down",
+                              "library": "lucide",
+                              "fill": "$caribe/ink-3",
+                              "width": 15,
+                              "height": 15
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "etn6Q",
+                      "name": "Pagar",
+                      "layout": "horizontal",
+                      "width": 426,
+                      "padding": [
+                        13,
+                        16
+                      ],
+                      "cornerRadius": 8,
+                      "fill": "$caribe/accent",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Dt0Xa",
+                          "content": "Pagar RD$7,200.00",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600",
+                          "fill": "$caribe/accent-ink",
+                          "lineHeight": 1.5
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "MfStF",
+                      "content": "Formulario simulado: nada de lo que escribas aquí se envía al servidor ni a Stripe. En producción esta pantalla la sirve Stripe Checkout.",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "fill": "$caribe/ink-3",
+                      "lineHeight": 1.5,
+                      "width": 426,
+                      "textGrowth": "fixed-width"
+                    },
+                    {
+                      "type": "text",
+                      "id": "UWSus",
+                      "content": "Cancelar y volver al tour",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal",
+                      "fill": "$caribe/ink-3",
+                      "lineHeight": 1.5,
+                      "width": 426,
+                      "textGrowth": "fixed-width",
+                      "textAlign": "center"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "l6W7t",
+      "name": "Landing · Móvil 390",
+      "x": 4560,
+      "y": 0,
+      "width": 390,
+      "height": 844,
+      "layout": "vertical",
+      "fill": "$hero/bg",
+      "clip": true,
+      "children": [
+        {
+          "type": "frame",
+          "id": "bOPjg",
+          "name": "Cabecera",
+          "layout": "horizontal",
+          "width": 390,
+          "padding": [
+            18,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "7U5Hp",
+              "name": "Marca",
+              "layout": "horizontal",
+              "gap": 9,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "rCHZt",
+                  "width": 9,
+                  "height": 9,
+                  "fill": "$hero/ink"
+                },
+                {
+                  "type": "text",
+                  "id": "Duoz9",
+                  "content": "Paseo Seguro",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "600",
+                  "fill": "$hero/ink",
+                  "lineHeight": 1.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Vg5uf",
+              "name": "Nav",
+              "layout": "horizontal",
+              "gap": 6,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "xRzLy",
+                  "name": "Nav/Inicio",
+                  "layout": "horizontal",
+                  "padding": [
+                    7,
+                    12
+                  ],
+                  "cornerRadius": 7,
+                  "fill": "$hero/veil",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fx1xb",
+                      "content": "Inicio",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "fill": "$hero/ink",
+                      "lineHeight": 1.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ZyIj1",
+                  "name": "Nav/Tours",
+                  "layout": "horizontal",
+                  "padding": [
+                    7,
+                    12
+                  ],
+                  "cornerRadius": 7,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "YmVKx",
+                      "content": "Tours",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "fill": "$hero/ink",
+                      "lineHeight": 1.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Ifvfr",
+                  "name": "Selector de tema",
+                  "layout": "horizontal",
+                  "gap": 2,
+                  "padding": 3,
+                  "cornerRadius": 999,
+                  "fill": "$hero/veil",
+                  "stroke": "$hero/veil",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "WD42s",
+                      "name": "Auto",
+                      "layout": "horizontal",
+                      "padding": [
+                        6,
+                        7
+                      ],
+                      "cornerRadius": 999,
+                      "fill": "$hero/veil",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "LKllf",
+                          "icon": "contrast",
+                          "library": "lucide",
+                          "fill": "$hero/ink",
+                          "width": 14,
+                          "height": 14
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "IkKs9",
+                      "name": "Claro",
+                      "layout": "horizontal",
+                      "padding": [
+                        6,
+                        7
+                      ],
+                      "cornerRadius": 999,
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "ZboHd",
+                          "icon": "sun",
+                          "library": "lucide",
+                          "fill": "$hero/ink",
+                          "width": 14,
+                          "height": 14
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "eLItY",
+                      "name": "Oscuro",
+                      "layout": "horizontal",
+                      "padding": [
+                        6,
+                        7
+                      ],
+                      "cornerRadius": 999,
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "bP1ZB",
+                          "icon": "moon",
+                          "library": "lucide",
+                          "fill": "$hero/ink",
+                          "width": 14,
+                          "height": 14
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Cl5rz",
+          "name": "Contenido",
+          "layout": "vertical",
+          "padding": [
+            40,
+            20
+          ],
+          "gap": 18,
+          "children": [
+            {
+              "type": "frame",
+              "id": "HvWDz",
+              "name": "Eyebrow",
+              "layout": "horizontal",
+              "gap": 8,
+              "alignItems": "center",
+              "padding": [
+                6,
+                12
+              ],
+              "cornerRadius": 999,
+              "fill": "$hero/veil",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "V0PBp",
+                  "width": 6,
+                  "height": 6,
+                  "fill": "$caribe/ok"
+                },
+                {
+                  "type": "text",
+                  "id": "ToFW6",
+                  "content": "PRONÓSTICO EN VIVO",
+                  "fontFamily": "Inter",
+                  "fontSize": 10,
+                  "fontWeight": "500",
+                  "fill": "$hero/ink",
+                  "lineHeight": 1.5,
+                  "letterSpacing": 1.1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ZUeTN",
+              "name": "Título",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "wvZ9v",
+                  "content": "Si el pronóstico anuncia lluvia,",
+                  "fontFamily": "Inter",
+                  "fontSize": 36,
+                  "fontWeight": "700",
+                  "fill": "$hero/ink",
+                  "lineHeight": 1.05,
+                  "letterSpacing": -1.2,
+                  "width": 340,
+                  "textGrowth": "fixed-width"
+                },
+                {
+                  "type": "text",
+                  "id": "RiFFI",
+                  "content": "el precio baja solo.",
+                  "fontFamily": "Inter",
+                  "fontSize": 36,
+                  "fontWeight": "700",
+                  "fill": "$hero/accent",
+                  "lineHeight": 1.05,
+                  "letterSpacing": -1.2,
+                  "width": 340,
+                  "textGrowth": "fixed-width"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "6cAW0",
+              "content": "Tours por República Dominicana con precio dinámico. Si la lluvia prevista pasa del 60%, el descuento se aplica automáticamente.",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "normal",
+              "fill": "$hero/ink-soft",
+              "lineHeight": 1.6,
+              "width": 340,
+              "textGrowth": "fixed-width"
+            },
+            {
+              "type": "frame",
+              "id": "A7A6j",
+              "name": "CTAs",
+              "layout": "vertical",
+              "gap": 10,
+              "width": 340,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "y1f4D",
+                  "name": "CTA/primario",
+                  "layout": "horizontal",
+                  "width": 340,
+                  "padding": [
+                    13,
+                    22
+                  ],
+                  "cornerRadius": 9,
+                  "fill": "$hero/ink",
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Qw2aZ",
+                      "content": "Ver tours disponibles",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "600",
+                      "fill": "$hero/bg",
+                      "lineHeight": 1.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "xTaZh",
+                  "name": "CTA/secundario",
+                  "layout": "horizontal",
+                  "width": 340,
+                  "padding": [
+                    13,
+                    22
+                  ],
+                  "cornerRadius": 9,
+                  "fill": "$hero/veil",
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "9IObH",
+                      "content": "Cómo funciona",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "600",
+                      "fill": "$hero/ink",
+                      "lineHeight": 1.5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "TEMGo",
+              "name": "Métricas",
+              "layout": "horizontal",
+              "gap": 26,
+              "padding": [
+                8,
+                0
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "BHsr4",
+                  "name": "M1",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pVkOy",
+                      "content": "TOURS",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "500",
+                      "fill": "$hero/ink-soft",
+                      "lineHeight": 1.5,
+                      "letterSpacing": 1.1
+                    },
+                    {
+                      "type": "text",
+                      "id": "Rkuny",
+                      "content": "3",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "600",
+                      "fill": "$hero/ink",
+                      "lineHeight": 1.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "l6dWD",
+                  "name": "M2",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dEtUh",
+                      "content": "DESDE",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "500",
+                      "fill": "$hero/ink-soft",
+                      "lineHeight": 1.5,
+                      "letterSpacing": 1.1
+                    },
+                    {
+                      "type": "text",
+                      "id": "tPjX6",
+                      "content": "RD$1,800",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "600",
+                      "fill": "$hero/ink",
+                      "lineHeight": 1.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "wnLpM",
+                  "name": "M3",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "bLE6Z",
+                      "content": "PRONÓSTICO",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "500",
+                      "fill": "$hero/ink-soft",
+                      "lineHeight": 1.5,
+                      "letterSpacing": 1.1
+                    },
+                    {
+                      "type": "text",
+                      "id": "cugml",
+                      "content": "14 días",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "600",
+                      "fill": "$hero/ink",
+                      "lineHeight": 1.5
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "WQ2V6",
+      "name": "Tokens · Tema Caribe",
+      "x": 5100,
+      "y": 0,
+      "width": 520,
+      "layout": "vertical",
+      "fill": "$caribe/bg",
+      "padding": 32,
+      "gap": 16,
+      "children": [
+        {
+          "type": "frame",
+          "id": "z69vQ",
+          "name": "Encabezado",
+          "layout": "vertical",
+          "gap": 6,
+          "children": [
+            {
+              "type": "text",
+              "id": "OJ80J",
+              "content": "Tema Caribe",
+              "fontFamily": "Inter",
+              "fontSize": 26,
+              "fontWeight": "700",
+              "fill": "$caribe/ink",
+              "lineHeight": 1.5,
+              "letterSpacing": -0.5
+            },
+            {
+              "type": "text",
+              "id": "E2qF4",
+              "content": "Cambia Mode → Light/Dark en el panel de temas: los mismos tokens que usa light-dark() en el CSS.",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal",
+              "fill": "$caribe/ink-3",
+              "lineHeight": 1.5,
+              "width": 440,
+              "textGrowth": "fixed-width"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "78Qit",
+          "name": "Muestras",
+          "layout": "vertical",
+          "gap": 8,
+          "children": [
+            {
+              "type": "frame",
+              "id": "HYHXr",
+              "name": "Muestra/bg",
+              "layout": "horizontal",
+              "gap": 12,
+              "alignItems": "center",
+              "width": 440,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "JX9fE",
+                  "name": "Chip",
+                  "layout": "horizontal",
+                  "width": 64,
+                  "height": 34,
+                  "cornerRadius": 7,
+                  "fill": "$caribe/bg",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "children": []
+                },
+                {
+                  "type": "text",
+                  "id": "3ozdn",
+                  "content": "--bg",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "fill": "$caribe/ink",
+                  "lineHeight": 1.5,
+                  "width": 140,
+                  "textGrowth": "fixed-width"
+                },
+                {
+                  "type": "text",
+                  "id": "8iZZy",
+                  "content": "Fondo",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "fill": "$caribe/ink-3",
+                  "lineHeight": 1.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "AM3kA",
+              "name": "Muestra/surface",
+              "layout": "horizontal",
+              "gap": 12,
+              "alignItems": "center",
+              "width": 440,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "YdQ7p",
+                  "name": "Chip",
+                  "layout": "horizontal",
+                  "width": 64,
+                  "height": 34,
+                  "cornerRadius": 7,
+                  "fill": "$caribe/surface",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "children": []
+                },
+                {
+                  "type": "text",
+                  "id": "5a3E5",
+                  "content": "--surface",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "fill": "$caribe/ink",
+                  "lineHeight": 1.5,
+                  "width": 140,
+                  "textGrowth": "fixed-width"
+                },
+                {
+                  "type": "text",
+                  "id": "xCYpT",
+                  "content": "Superficie",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "fill": "$caribe/ink-3",
+                  "lineHeight": 1.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "IdjKX",
+              "name": "Muestra/surface-2",
+              "layout": "horizontal",
+              "gap": 12,
+              "alignItems": "center",
+              "width": 440,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "kXujq",
+                  "name": "Chip",
+                  "layout": "horizontal",
+                  "width": 64,
+                  "height": 34,
+                  "cornerRadius": 7,
+                  "fill": "$caribe/surface-2",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "children": []
+                },
+                {
+                  "type": "text",
+                  "id": "63ZHi",
+                  "content": "--surface-2",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "fill": "$caribe/ink",
+                  "lineHeight": 1.5,
+                  "width": 140,
+                  "textGrowth": "fixed-width"
+                },
+                {
+                  "type": "text",
+                  "id": "OVNrH",
+                  "content": "Superficie 2",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "fill": "$caribe/ink-3",
+                  "lineHeight": 1.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "g4ESD",
+              "name": "Muestra/line",
+              "layout": "horizontal",
+              "gap": 12,
+              "alignItems": "center",
+              "width": 440,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "lan06",
+                  "name": "Chip",
+                  "layout": "horizontal",
+                  "width": 64,
+                  "height": 34,
+                  "cornerRadius": 7,
+                  "fill": "$caribe/line",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "children": []
+                },
+                {
+                  "type": "text",
+                  "id": "2j0if",
+                  "content": "--line",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "fill": "$caribe/ink",
+                  "lineHeight": 1.5,
+                  "width": 140,
+                  "textGrowth": "fixed-width"
+                },
+                {
+                  "type": "text",
+                  "id": "wrNTH",
+                  "content": "Borde",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "fill": "$caribe/ink-3",
+                  "lineHeight": 1.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "fY0Cn",
+              "name": "Muestra/ink",
+              "layout": "horizontal",
+              "gap": 12,
+              "alignItems": "center",
+              "width": 440,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "f9VLI",
+                  "name": "Chip",
+                  "layout": "horizontal",
+                  "width": 64,
+                  "height": 34,
+                  "cornerRadius": 7,
+                  "fill": "$caribe/ink",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "children": []
+                },
+                {
+                  "type": "text",
+                  "id": "2GtbY",
+                  "content": "--ink",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "fill": "$caribe/ink",
+                  "lineHeight": 1.5,
+                  "width": 140,
+                  "textGrowth": "fixed-width"
+                },
+                {
+                  "type": "text",
+                  "id": "mAm6R",
+                  "content": "Texto",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "fill": "$caribe/ink-3",
+                  "lineHeight": 1.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "tDQTe",
+              "name": "Muestra/ink-2",
+              "layout": "horizontal",
+              "gap": 12,
+              "alignItems": "center",
+              "width": 440,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "cIAHF",
+                  "name": "Chip",
+                  "layout": "horizontal",
+                  "width": 64,
+                  "height": 34,
+                  "cornerRadius": 7,
+                  "fill": "$caribe/ink-2",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "children": []
+                },
+                {
+                  "type": "text",
+                  "id": "k819t",
+                  "content": "--ink-2",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "fill": "$caribe/ink",
+                  "lineHeight": 1.5,
+                  "width": 140,
+                  "textGrowth": "fixed-width"
+                },
+                {
+                  "type": "text",
+                  "id": "utzeJ",
+                  "content": "Texto 2",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "fill": "$caribe/ink-3",
+                  "lineHeight": 1.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Ca3yT",
+              "name": "Muestra/ink-3",
+              "layout": "horizontal",
+              "gap": 12,
+              "alignItems": "center",
+              "width": 440,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "xeRig",
+                  "name": "Chip",
+                  "layout": "horizontal",
+                  "width": 64,
+                  "height": 34,
+                  "cornerRadius": 7,
+                  "fill": "$caribe/ink-3",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "children": []
+                },
+                {
+                  "type": "text",
+                  "id": "QzRDV",
+                  "content": "--ink-3",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "fill": "$caribe/ink",
+                  "lineHeight": 1.5,
+                  "width": 140,
+                  "textGrowth": "fixed-width"
+                },
+                {
+                  "type": "text",
+                  "id": "9Y1hP",
+                  "content": "Texto apagado",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "fill": "$caribe/ink-3",
+                  "lineHeight": 1.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NjsOy",
+              "name": "Muestra/accent",
+              "layout": "horizontal",
+              "gap": 12,
+              "alignItems": "center",
+              "width": 440,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "TEpsK",
+                  "name": "Chip",
+                  "layout": "horizontal",
+                  "width": 64,
+                  "height": 34,
+                  "cornerRadius": 7,
+                  "fill": "$caribe/accent",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "children": []
+                },
+                {
+                  "type": "text",
+                  "id": "hDXa2",
+                  "content": "--accent",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "fill": "$caribe/ink",
+                  "lineHeight": 1.5,
+                  "width": 140,
+                  "textGrowth": "fixed-width"
+                },
+                {
+                  "type": "text",
+                  "id": "2ZUn5",
+                  "content": "Acento",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "fill": "$caribe/ink-3",
+                  "lineHeight": 1.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Uhvt8",
+              "name": "Muestra/accent-hover",
+              "layout": "horizontal",
+              "gap": 12,
+              "alignItems": "center",
+              "width": 440,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "7IVt9",
+                  "name": "Chip",
+                  "layout": "horizontal",
+                  "width": 64,
+                  "height": 34,
+                  "cornerRadius": 7,
+                  "fill": "$caribe/accent-hover",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "children": []
+                },
+                {
+                  "type": "text",
+                  "id": "vWzJQ",
+                  "content": "--accent-hover",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "fill": "$caribe/ink",
+                  "lineHeight": 1.5,
+                  "width": 140,
+                  "textGrowth": "fixed-width"
+                },
+                {
+                  "type": "text",
+                  "id": "fqmmy",
+                  "content": "Acento hover",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "fill": "$caribe/ink-3",
+                  "lineHeight": 1.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ROTll",
+              "name": "Muestra/accent-ink",
+              "layout": "horizontal",
+              "gap": 12,
+              "alignItems": "center",
+              "width": 440,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "rKEUO",
+                  "name": "Chip",
+                  "layout": "horizontal",
+                  "width": 64,
+                  "height": 34,
+                  "cornerRadius": 7,
+                  "fill": "$caribe/accent-ink",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "children": []
+                },
+                {
+                  "type": "text",
+                  "id": "vC0yf",
+                  "content": "--accent-ink",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "fill": "$caribe/ink",
+                  "lineHeight": 1.5,
+                  "width": 140,
+                  "textGrowth": "fixed-width"
+                },
+                {
+                  "type": "text",
+                  "id": "gjNgi",
+                  "content": "Tinta sobre acento",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "fill": "$caribe/ink-3",
+                  "lineHeight": 1.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Xev60",
+              "name": "Muestra/accent-soft",
+              "layout": "horizontal",
+              "gap": 12,
+              "alignItems": "center",
+              "width": 440,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "mzc1D",
+                  "name": "Chip",
+                  "layout": "horizontal",
+                  "width": 64,
+                  "height": 34,
+                  "cornerRadius": 7,
+                  "fill": "$caribe/accent-soft",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "children": []
+                },
+                {
+                  "type": "text",
+                  "id": "LTfgo",
+                  "content": "--accent-soft",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "fill": "$caribe/ink",
+                  "lineHeight": 1.5,
+                  "width": 140,
+                  "textGrowth": "fixed-width"
+                },
+                {
+                  "type": "text",
+                  "id": "ckhBA",
+                  "content": "Acento suave",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "fill": "$caribe/ink-3",
+                  "lineHeight": 1.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NaUzN",
+              "name": "Muestra/ok",
+              "layout": "horizontal",
+              "gap": 12,
+              "alignItems": "center",
+              "width": 440,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "B7GiP",
+                  "name": "Chip",
+                  "layout": "horizontal",
+                  "width": 64,
+                  "height": 34,
+                  "cornerRadius": 7,
+                  "fill": "$caribe/ok",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "children": []
+                },
+                {
+                  "type": "text",
+                  "id": "nXj0S",
+                  "content": "--ok",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "fill": "$caribe/ink",
+                  "lineHeight": 1.5,
+                  "width": 140,
+                  "textGrowth": "fixed-width"
+                },
+                {
+                  "type": "text",
+                  "id": "yEv6A",
+                  "content": "OK",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "fill": "$caribe/ink-3",
+                  "lineHeight": 1.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "CgJyn",
+              "name": "Muestra/ok-soft",
+              "layout": "horizontal",
+              "gap": 12,
+              "alignItems": "center",
+              "width": 440,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "SuYYp",
+                  "name": "Chip",
+                  "layout": "horizontal",
+                  "width": 64,
+                  "height": 34,
+                  "cornerRadius": 7,
+                  "fill": "$caribe/ok-soft",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "children": []
+                },
+                {
+                  "type": "text",
+                  "id": "QMHbq",
+                  "content": "--ok-soft",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "fill": "$caribe/ink",
+                  "lineHeight": 1.5,
+                  "width": 140,
+                  "textGrowth": "fixed-width"
+                },
+                {
+                  "type": "text",
+                  "id": "vmvtP",
+                  "content": "OK suave",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "fill": "$caribe/ink-3",
+                  "lineHeight": 1.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "owNGG",
+              "name": "Muestra/warn",
+              "layout": "horizontal",
+              "gap": 12,
+              "alignItems": "center",
+              "width": 440,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "GvYs0",
+                  "name": "Chip",
+                  "layout": "horizontal",
+                  "width": 64,
+                  "height": 34,
+                  "cornerRadius": 7,
+                  "fill": "$caribe/warn",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "children": []
+                },
+                {
+                  "type": "text",
+                  "id": "gNTkq",
+                  "content": "--warn",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "fill": "$caribe/ink",
+                  "lineHeight": 1.5,
+                  "width": 140,
+                  "textGrowth": "fixed-width"
+                },
+                {
+                  "type": "text",
+                  "id": "XI5tJ",
+                  "content": "Aviso",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "fill": "$caribe/ink-3",
+                  "lineHeight": 1.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QmXfi",
+              "name": "Muestra/warn-soft",
+              "layout": "horizontal",
+              "gap": 12,
+              "alignItems": "center",
+              "width": 440,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "jKTm7",
+                  "name": "Chip",
+                  "layout": "horizontal",
+                  "width": 64,
+                  "height": 34,
+                  "cornerRadius": 7,
+                  "fill": "$caribe/warn-soft",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "children": []
+                },
+                {
+                  "type": "text",
+                  "id": "HTT17",
+                  "content": "--warn-soft",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "fill": "$caribe/ink",
+                  "lineHeight": 1.5,
+                  "width": 140,
+                  "textGrowth": "fixed-width"
+                },
+                {
+                  "type": "text",
+                  "id": "mK8bO",
+                  "content": "Aviso suave",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "fill": "$caribe/ink-3",
+                  "lineHeight": 1.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "CUip5",
+              "name": "Muestra/danger",
+              "layout": "horizontal",
+              "gap": 12,
+              "alignItems": "center",
+              "width": 440,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "pEKAS",
+                  "name": "Chip",
+                  "layout": "horizontal",
+                  "width": 64,
+                  "height": 34,
+                  "cornerRadius": 7,
+                  "fill": "$caribe/danger",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "children": []
+                },
+                {
+                  "type": "text",
+                  "id": "vvf73",
+                  "content": "--danger",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "fill": "$caribe/ink",
+                  "lineHeight": 1.5,
+                  "width": 140,
+                  "textGrowth": "fixed-width"
+                },
+                {
+                  "type": "text",
+                  "id": "xrD4h",
+                  "content": "Error",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "fill": "$caribe/ink-3",
+                  "lineHeight": 1.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jh70a",
+              "name": "Muestra/danger-soft",
+              "layout": "horizontal",
+              "gap": 12,
+              "alignItems": "center",
+              "width": 440,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "KIIJe",
+                  "name": "Chip",
+                  "layout": "horizontal",
+                  "width": 64,
+                  "height": 34,
+                  "cornerRadius": 7,
+                  "fill": "$caribe/danger-soft",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "children": []
+                },
+                {
+                  "type": "text",
+                  "id": "J6qk6",
+                  "content": "--danger-soft",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "fill": "$caribe/ink",
+                  "lineHeight": 1.5,
+                  "width": 140,
+                  "textGrowth": "fixed-width"
+                },
+                {
+                  "type": "text",
+                  "id": "V50vM",
+                  "content": "Error suave",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "fill": "$caribe/ink-3",
+                  "lineHeight": 1.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "DczlY",
+              "name": "Muestra/track",
+              "layout": "horizontal",
+              "gap": 12,
+              "alignItems": "center",
+              "width": 440,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "sR5xp",
+                  "name": "Chip",
+                  "layout": "horizontal",
+                  "width": 64,
+                  "height": 34,
+                  "cornerRadius": 7,
+                  "fill": "$caribe/track",
+                  "stroke": "$caribe/line",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "children": []
+                },
+                {
+                  "type": "text",
+                  "id": "WKx1k",
+                  "content": "--track",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "fill": "$caribe/ink",
+                  "lineHeight": 1.5,
+                  "width": 140,
+                  "textGrowth": "fixed-width"
+                },
+                {
+                  "type": "text",
+                  "id": "lMJZe",
+                  "content": "Riel",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "fill": "$caribe/ink-3",
+                  "lineHeight": 1.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "themes": {
+    "Mode": [
+      "Light",
+      "Dark"
+    ]
+  },
+  "variables": {
+    "caribe/bg": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#eef2f3"
+        },
+        {
+          "value": "#0a161b",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "caribe/surface": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#ffffff"
+        },
+        {
+          "value": "#11222a",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "caribe/surface-2": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#f5f8f9"
+        },
+        {
+          "value": "#162a32",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "caribe/line": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#d3dde1"
+        },
+        {
+          "value": "#233a43",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "caribe/ink": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#0f1a20"
+        },
+        {
+          "value": "#e6f0f3",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "caribe/ink-2": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#3d4e57"
+        },
+        {
+          "value": "#b2c5cd",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "caribe/ink-3": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#697c85"
+        },
+        {
+          "value": "#839aa3",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "caribe/accent": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#0d5a73"
+        },
+        {
+          "value": "#5cc4e0",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "caribe/accent-hover": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#0a4a5f"
+        },
+        {
+          "value": "#85d6ec",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "caribe/accent-ink": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#ffffff"
+        },
+        {
+          "value": "#06222c",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "caribe/accent-soft": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#dceaf0"
+        },
+        {
+          "value": "#113340",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "caribe/ok": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#1c7554"
+        },
+        {
+          "value": "#4ecb96",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "caribe/ok-soft": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#dcefe5"
+        },
+        {
+          "value": "#10322a",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "caribe/warn": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#8a5a0b"
+        },
+        {
+          "value": "#e2b665",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "caribe/warn-soft": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#f5ead3"
+        },
+        {
+          "value": "#33280f",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "caribe/danger": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#a93a2c"
+        },
+        {
+          "value": "#f0887a",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "caribe/danger-soft": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#f6e1dd"
+        },
+        {
+          "value": "#3a1c18",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "caribe/track": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#cfdde3"
+        },
+        {
+          "value": "#1e3740",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "hero/bg": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#0b3d4f"
+        },
+        {
+          "value": "#072a38",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "hero/deep": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#072a38"
+        },
+        {
+          "value": "#04202b",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "hero/glow": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#10788f"
+        },
+        {
+          "value": "#10788f",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "hero/ink": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#eaf6fa"
+        },
+        {
+          "value": "#eaf6fa",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "hero/ink-soft": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#b9d6e0"
+        },
+        {
+          "value": "#b9d6e0",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "hero/accent": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#8fdcf0"
+        },
+        {
+          "value": "#8fdcf0",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "hero/veil": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#ffffff1f"
+        },
+        {
+          "value": "#ffffff1f",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    }
+  },
+  "fileToken": "4c926b8e-7217-4c3c-b220-87a7e9e34b34"
+}

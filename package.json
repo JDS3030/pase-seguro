@@ -14,14 +14,14 @@
     "db:migrate": "prisma migrate dev",
     "db:generate": "prisma generate",
     "db:reset": "prisma migrate reset --force",
-    "db:seed": "tsx prisma/seed.ts",
+    "db:seed": "tsx backend/prisma/seed.ts",
     "db:studio": "prisma studio",
     "stripe:listen": "stripe listen --forward-to localhost:3000/api/webhooks/stripe",
     "test": "vitest run",
     "test:watch": "vitest"
   },
   "prisma": {
-    "seed": "tsx prisma/seed.ts"
+    "seed": "tsx backend/prisma/seed.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.2.1",
