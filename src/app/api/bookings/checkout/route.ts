@@ -94,6 +94,16 @@ export async function POST(req: Request) {
 
   const { booking } = txResult;
 
+  // Mock mode: skip real Stripe, redirect to local payment terminal
+  if (env.MOCK_STRIPE) {
+    const mockSessionId = `cs_mock_${booking.id}`;
+    await prisma.booking.update({
+      where: { id: booking.id },
+      data: { stripeSessionId: mockSessionId },
+    });
+    return ok({ checkoutUrl: `${env.APP_URL}/mock-pago/${booking.id}`, bookingId: booking.id }, 201);
+  }
+
   let stripeSession: { id: string; url: string | null };
   try {
     stripeSession = await stripe.checkout.sessions.create(
@@ -115,8 +125,8 @@ export async function POST(req: Request) {
             },
           },
         ],
-        success_url: `${env.APP_URL}/reservas/confirmacion?session_id={CHECKOUT_SESSION_ID}`,
-        cancel_url: `${env.APP_URL}/tours/${tour.slug}`,
+        success_url: `${env.FRONTEND_URL}/reservas/confirmacion?session_id={CHECKOUT_SESSION_ID}`,
+        cancel_url: `${env.FRONTEND_URL}/tours/${tour.slug}`,
         expires_at: Math.floor(Date.now() / 1000) + 30 * 60,
       },
       { idempotencyKey: booking.id },

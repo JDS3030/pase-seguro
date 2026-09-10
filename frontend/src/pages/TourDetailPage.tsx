@@ -27,7 +27,7 @@ export function TourDetailPage() {
   if (error || !tour) return (
     <div>
       <p className="muted">{error ?? "Tour no encontrado."}</p>
-      <Link to="/">← Volver al catálogo</Link>
+      <Link to="/tours">← Volver al catálogo</Link>
     </div>
   );
 
@@ -36,6 +36,7 @@ export function TourDetailPage() {
   return (
     <div className="detail">
       <div className="body">
+        <Link className="crumb" to="/tours">← Todos los tours</Link>
         <h1>{tour.title}</h1>
         <p className="muted">{tour.locationName}</p>
         <p>{tour.description}</p>

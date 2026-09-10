@@ -39,7 +39,7 @@ export function ConfirmationView({ sessionId }: { sessionId: string }) {
     <div className="confirm">
       <h1>No encontramos tu reserva</h1>
       <p className="muted">{error}</p>
-      <a href="/">Volver al catálogo</a>
+      <a href="/tours">Volver al catálogo</a>
     </div>
   );
 
@@ -88,12 +88,12 @@ export function ConfirmationView({ sessionId }: { sessionId: string }) {
         )}
         <div>
           <dt>Total</dt>
-          <dd style={{ fontWeight: 700 }}>{formatMoney(booking.price.finalPriceCents, booking.price.currency)}</dd>
+          <dd style={{ fontWeight: 700 }}>{formatMoney(booking.price.finalPriceCents * booking.passengersCount, booking.price.currency)}</dd>
         </div>
       </dl>
 
       <p style={{ marginTop: 26 }}>
-        <a href={`/tours/${booking.tour.slug}`}>Volver al tour</a> · <a href="/">Ver todos los tours</a>
+        <a href={`/tours/${booking.tour.slug}`}>Volver al tour</a> · <a href="/tours">Ver todos los tours</a>
       </p>
     </div>
   );

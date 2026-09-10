@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import type { Tour } from "../types";
 import { api } from "../lib/api";
 import { formatMoney, SLOT_LABEL } from "../lib/format";
+import { COPY_FORECAST_DAYS, COPY_RAIN_THRESHOLD_PCT } from "../lib/rules";
 
 export function TourListPage() {
   const [tours,   setTours]   = useState<Tour[]>([]);
@@ -23,7 +24,8 @@ export function TourListPage() {
     <>
       <h1>Tours en República Dominicana</h1>
       <p className="muted">
-        Elige una fecha dentro de los próximos 14 días. Si la probabilidad de lluvia supera el 60%, el descuento se aplica solo.
+        Elige una fecha dentro de los próximos {COPY_FORECAST_DAYS} días. Si la probabilidad de lluvia
+        supera el {COPY_RAIN_THRESHOLD_PCT}%, el descuento se aplica solo.
       </p>
       <div className="tour-grid">
         {tours.map((tour) => (

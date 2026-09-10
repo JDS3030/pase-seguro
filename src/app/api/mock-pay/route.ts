@@ -28,7 +28,9 @@ export async function POST(req: Request) {
       data: {
         status: "CONFIRMED",
         stripePaymentIntentId: `pi_mock_${bookingId}`,
-        amountPaidCents: booking.finalPriceCents,
+        // Igual que Stripe: el importe cobrado es el precio unitario × pasajeros
+        // (ver handleStripeEvent → session.amount_total).
+        amountPaidCents: booking.finalPriceCents * booking.passengersCount,
         confirmedAt: new Date(),
       },
     });

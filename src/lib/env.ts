@@ -19,6 +19,7 @@ const Schema = z.object({
   WEATHER_STALE_TOLERANCE_SECONDS: z.coerce.number().int().positive().default(21_600),
 
   APP_URL: z.string().url().default("http://localhost:3000"),
+  FRONTEND_URL: z.string().url().default("http://localhost:5173"),
   QUOTE_SIGNING_SECRET: z.string().min(16),
   MOCK_STRIPE: z.coerce.boolean().default(false),
 });

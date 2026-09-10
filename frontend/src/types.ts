@@ -55,6 +55,7 @@ export interface BookingDetail {
   tour: { title: string; slug: string; locationName: string };
   bookingDate: string;
   timeSlot: TimeSlot;
+  passengersCount: number;
   price: {
     basePriceCents: number;
     discountCents: number;

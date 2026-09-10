@@ -32,6 +32,7 @@ export async function GET(
     tour: booking.tour,
     bookingDate: toDateString(booking.bookingDate),
     timeSlot: booking.timeSlot,
+    passengersCount: booking.passengersCount,
     price: {
       basePriceCents: booking.basePriceCents,
       discountCents: booking.discountCents,

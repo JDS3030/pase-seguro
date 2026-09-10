@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ThemeToggle, THEME_INIT_SCRIPT } from "@/components/ThemeToggle";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -9,14 +10,22 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es">
+    <html lang="es" suppressHydrationWarning>
+      <head>
+        <meta name="color-scheme" content="light dark" />
+        {/* Aplica el tema guardado antes del primer paint (evita el flash). */}
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+      </head>
       <body>
         <header className="site-header">
           <a className="brand" href="/">
             <span className="brand-dot" aria-hidden="true" />
             Paseo Seguro
           </a>
-          <p className="tagline">Si el pronóstico anuncia lluvia, el precio baja solo.</p>
+          <div className="site-nav">
+            <p className="tagline">Si el pronóstico anuncia lluvia, el precio baja solo.</p>
+            <ThemeToggle />
+          </div>
         </header>
         <main className="site-main">{children}</main>
         <footer className="site-footer">

@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { ConfirmationView } from "../components/ConfirmationView";
 
 export function ConfirmationPage() {
@@ -11,7 +11,7 @@ export function ConfirmationPage() {
       <h1>Falta la referencia del pago</h1>
       <p className="muted">
         Llegaste aquí sin identificador de sesión. Si acabas de pagar, revisa tu correo —
-        Stripe te envió el recibo. <a href="/">Volver al catálogo</a>
+        Stripe te envió el recibo. <Link to="/tours">Volver al catálogo</Link>
       </p>
     </div>
   );

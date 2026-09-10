@@ -17,7 +17,7 @@ const Body = z
     tourId: z.string().min(1),
     bookingDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "formato esperado YYYY-MM-DD"),
     timeSlot: z.enum(["MORNING", "AFTERNOON", "EVENING"]),
-    passengersCount: z.number().int().min(1).max(10).default(1),
+    passengersCount: z.number().int().min(1).max(20).default(1),
   })
   .strict();
 
