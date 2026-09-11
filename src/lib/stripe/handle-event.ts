@@ -1,6 +1,7 @@
 import type Stripe from "stripe";
-import { Prisma, type BookingStatus } from "@prisma/client";
+import { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/db";
+import type { BookingStatus } from "@/lib/time-slot";
 
 const HANDLED = new Set([
   "checkout.session.completed",
