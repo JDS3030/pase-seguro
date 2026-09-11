@@ -1,5 +1,6 @@
 import { prisma } from "@/lib/db";
-import { type Prisma, type TimeSlot } from "@prisma/client";
+import { type Prisma } from "@prisma/client";
+import type { TimeSlot } from "@/lib/time-slot";
 
 export const HOLD_WINDOW_MINUTES = 15;
 

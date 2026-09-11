@@ -1,4 +1,4 @@
-import type { TimeSlot } from "@prisma/client";
+import type { TimeSlot } from "@/lib/time-slot";
 
 export const SLOT_LABEL: Record<TimeSlot, string> = {
   MORNING: "Mañana",

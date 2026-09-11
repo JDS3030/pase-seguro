@@ -7,7 +7,7 @@ import { checkBookingWindow } from "@/lib/weather/window";
 import { priceBooking } from "@/lib/pricing/engine";
 import { issueQuoteToken } from "@/lib/pricing/quote-token";
 import { checkAvailability } from "@/lib/availability/capacity";
-import type { TimeSlot } from "@prisma/client";
+import type { TimeSlot } from "@/lib/time-slot";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";

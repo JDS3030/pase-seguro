@@ -9,7 +9,7 @@ import { checkAvailability } from "@/lib/availability/capacity";
 import { stripe } from "@/lib/stripe/client";
 import { env } from "@/lib/env";
 import type { SlotKey } from "@/lib/weather/open-meteo";
-import type { TimeSlot } from "@prisma/client";
+import type { TimeSlot } from "@/lib/time-slot";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
