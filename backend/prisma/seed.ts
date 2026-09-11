@@ -102,12 +102,12 @@ const CATALOGO = [
 async function main() {
   for (const t of CATALOGO) {
     const geo = await geocode(t.query);
-    const { query: _query, ...rest } = t;
+    const { query: _query, slots, ...rest } = t;
 
     await prisma.tour.upsert({
       where: { slug: t.slug },
-      update: { ...rest, ...geo, currency: "USD" },
-      create: { ...rest, ...geo, currency: "USD" },
+      update: { ...rest, ...geo, currency: "USD", slots: slots as any },
+      create: { ...rest, ...geo, currency: "USD", slots: slots as any },
     });
 
     console.log(
