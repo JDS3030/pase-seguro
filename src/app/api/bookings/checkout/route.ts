@@ -10,6 +10,7 @@ import { stripe } from "@/lib/stripe/client";
 import { env } from "@/lib/env";
 import type { SlotKey } from "@/lib/weather/open-meteo";
 import type { TimeSlot } from "@/lib/time-slot";
+import type { PrismaClient } from "@prisma/client";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -51,7 +52,7 @@ export async function POST(req: Request) {
   }
 
   // Atomic: check availability + create booking in one transaction
-  const txResult = await prisma.$transaction(async (tx) => {
+  const txResult = await prisma.$transaction(async (tx: PrismaClient) => {
     const avail = await checkAvailability({
       tourId: tour.id,
       bookingDate: quote.d,
