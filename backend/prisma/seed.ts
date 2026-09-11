@@ -1,4 +1,4 @@
-import { PrismaClient, TimeSlot } from "@prisma/client";
+import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 const GEO = process.env.OPEN_METEO_GEOCODING_URL
@@ -45,7 +45,7 @@ const CATALOGO = [
       "Travesía en catamarán hasta Isla Saona con parada en la piscina natural, almuerzo criollo en la playa y regreso en lancha rápida por el Parque Nacional del Este.",
     basePriceCents: 8900,
     durationMin: 480,
-    slots: [TimeSlot.MORNING],
+    slots: ["MORNING"],
   },
   {
     slug: "bahia-de-las-aguilas",
@@ -55,7 +55,7 @@ const CATALOGO = [
       "Ocho kilómetros de playa virgen dentro del Parque Nacional Jaragua. Traslado en bote desde Cabo Rojo, sin infraestructura ni sombra: el pronóstico importa.",
     basePriceCents: 12000,
     durationMin: 600,
-    slots: [TimeSlot.MORNING],
+    slots: ["MORNING"],
   },
   {
     slug: "salto-el-limon",
@@ -65,7 +65,7 @@ const CATALOGO = [
       "Cabalgata de cuarenta minutos por senderos de montaña hasta una cascada de 52 metros, con tiempo para bañarse en la poza.",
     basePriceCents: 5500,
     durationMin: 240,
-    slots: [TimeSlot.MORNING, TimeSlot.AFTERNOON],
+    slots: ["MORNING", "AFTERNOON"],
   },
   {
     slug: "los-haitises-en-bote",
@@ -75,7 +75,7 @@ const CATALOGO = [
       "Recorrido entre mogotes y manglares, con visita a cuevas de pictografías taínas y avistamiento de aves en la bahía de San Lorenzo.",
     basePriceCents: 7200,
     durationMin: 300,
-    slots: [TimeSlot.MORNING, TimeSlot.AFTERNOON],
+    slots: ["MORNING", "AFTERNOON"],
   },
   {
     slug: "27-charcos-damajagua",
@@ -85,7 +85,7 @@ const CATALOGO = [
       "Ascenso por el cañón del río Damajagua y descenso saltando y deslizándose por las 27 pozas. Con casco, chaleco y guía local.",
     basePriceCents: 4999,
     durationMin: 300,
-    slots: [TimeSlot.MORNING, TimeSlot.AFTERNOON],
+    slots: ["MORNING", "AFTERNOON"],
   },
   {
     slug: "amanecer-pico-duarte",
@@ -95,7 +95,7 @@ const CATALOGO = [
       "Ascenso guiado de dos días al techo del Caribe, con campamento en La Compartición y salida nocturna para llegar a la cumbre al amanecer.",
     basePriceCents: 21000,
     durationMin: 2880,
-    slots: [TimeSlot.MORNING],
+    slots: ["MORNING"],
   },
 ];
 
