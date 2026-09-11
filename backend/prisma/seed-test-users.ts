@@ -4,8 +4,8 @@ const prisma = new PrismaClient();
 
 async function main() {
   const tours = await prisma.tour.findMany({ select: { id: true, slug: true, basePriceCents: true } });
-  const saona  = tours.find((t) => t.slug === "isla-saona-catamaran")!;
-  const charcos = tours.find((t) => t.slug === "27-charcos-damajagua")!;
+  const saona  = tours.find((t: { id: string; slug: string; basePriceCents: number }) => t.slug === "isla-saona-catamaran")!;
+  const charcos = tours.find((t: { id: string; slug: string; basePriceCents: number }) => t.slug === "27-charcos-damajagua")!;
 
   // Usuario 1 — sin descuento (lluvia 12%)
   const b1 = await prisma.booking.upsert({
