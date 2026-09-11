@@ -3,6 +3,7 @@ import { prisma } from "@/lib/db";
 import { formatMoney, formatDate, SLOT_LABEL } from "@/lib/format";
 import { MockPayActions } from "@/components/MockPayActions";
 import { env } from "@/lib/env";
+import type { TimeSlot } from "@/lib/time-slot";
 
 export const dynamic = "force-dynamic";
 
@@ -62,7 +63,7 @@ export default async function MockPagoPage({
               <p className="checkout-item-sub">
                 {booking.tour.locationName} ·{" "}
                 {formatDate(booking.bookingDate.toISOString().slice(0, 10))} ·{" "}
-                {SLOT_LABEL[booking.timeSlot]}
+                {SLOT_LABEL[booking.timeSlot as TimeSlot]}
               </p>
               <p className="checkout-item-sub">
                 {pax} {pax === 1 ? "pasajero" : "pasajeros"} ·{" "}
