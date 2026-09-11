@@ -1,5 +1,6 @@
 import type Stripe from "stripe";
-import { Prisma, PrismaClientKnownRequestError } from "@prisma/client";
+import { Prisma } from "@prisma/client";
+import { PrismaClientKnownRequestError } from "@prisma/client/runtime/library";
 import { prisma } from "@/lib/db";
 import type { BookingStatus } from "@/lib/time-slot";
 
