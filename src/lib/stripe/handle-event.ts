@@ -1,5 +1,5 @@
 import type Stripe from "stripe";
-import { Prisma } from "@prisma/client";
+import { Prisma, PrismaClientKnownRequestError } from "@prisma/client";
 import { prisma } from "@/lib/db";
 import type { BookingStatus } from "@/lib/time-slot";
 
@@ -27,7 +27,7 @@ export async function handleStripeEvent(event: Stripe.Event): Promise<void> {
         data: { id: event.id, type: event.type, bookingId },
       });
     } catch (e) {
-      if (e instanceof Prisma.PrismaClientKnownRequestError && e.code === "P2002") {
+      if (e instanceof PrismaClientKnownRequestError && e.code === "P2002") {
         console.info("[stripe] evento ya procesado:", event.id);
         return;
       }
