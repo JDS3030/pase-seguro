@@ -1,28 +1,11 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
-  "env": [
-    "DATABASE_URL",
-    "DEEPSEEK_API_KEY",
-    "STRIPE_SECRET_KEY",
-    "STRIPE_WEBHOOK_SECRET",
-    "QUOTE_SIGNING_SECRET",
-    "APP_URL",
-    "FRONTEND_URL",
-    "RAIN_THRESHOLD_PCT",
-    "WEATHER_DISCOUNT_BPS",
-    "FORECAST_MAX_DAYS",
-    "WEATHER_CACHE_TTL_SECONDS",
-    "WEATHER_STALE_TOLERANCE_SECONDS",
-    "MOCK_STRIPE"
-  ],
-  "regions": [
-    "iad1"
-  ],
+  "framework": "nextjs",
+  "regions": ["iad1"],
   "git": {
     "deploymentEnabled": {
-      "main": true
+      "master": true
     }
-  },
-  "framework": "nextjs"
+  }
 }
