@@ -12,19 +12,23 @@
     "db:up": "docker compose up -d",
     "db:down": "docker compose down",
     "db:migrate": "prisma migrate dev",
-    "db:generate": "prisma generate",
+    "db:generate": "prisma generate --schema=backend/prisma/schema.prisma",
     "db:reset": "prisma migrate reset --force",
     "db:seed": "tsx backend/prisma/seed.ts",
     "db:studio": "prisma studio",
     "stripe:listen": "stripe listen --forward-to localhost:3000/api/webhooks/stripe",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "postinstall": "prisma generate --schema=backend/prisma/schema.prisma"
   },
   "prisma": {
     "seed": "tsx backend/prisma/seed.ts"
   },
   "dependencies": {
+    "@ai-sdk/anthropic": "^4.0.53",
+    "@ai-sdk/deepseek": "^3.0.44",
     "@prisma/client": "^6.2.1",
+    "ai": "^7.0.98",
     "next": "^15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
