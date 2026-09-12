@@ -52,7 +52,7 @@ export async function POST(req: Request) {
   }
 
   // Atomic: check availability + create booking in one transaction
-  const txResult = await prisma.$transaction(async (tx: PrismaClient) => {
+  const txResult = await prisma.$transaction(async (tx) => {
     const avail = await checkAvailability({
       tourId: tour.id,
       bookingDate: quote.d,
